@@ -24,7 +24,7 @@ export function QuranChapterItem({ chapter }: { chapter: Chapter }) {
       <a class="group no-underline" href={`/${chapter.id.toString()}`}>
         <div class="flex justify-between items-center py-4 px-5 hover:bg-accent/50 transition-colors duration-200">
           <div class="flex items-center">
-            <div class="bg-base-300 flex items-center size-[calc(2.5*1rem)] rounded rotate-0 me-1 text-center before:absolute before:top-0 before:left-0 before:size-[calc(2.5*1rem)] before:bg-base-300 before:rotate-135 [&_p]:w-full [&_p]:z-10 [&_p]:font-bold">
+            <div class="relative bg-base-300 flex items-center size-[calc(2.5*1rem)] rounded rotate-0 me-1 text-center before:absolute before:top-0 before:left-0 before:size-[calc(2.5*1rem)] before:bg-base-300 before:rotate-135 [&_p]:w-full [&_p]:z-10 [&_p]:font-bold">
               <p>{chapter.id}</p>
             </div>
             <h4 aria-label={chapter.nameSimple} class="ml-4 text-lg font-semibold">
