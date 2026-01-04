@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ind_ags",
+    "name": "Alkitab Gratis untuk Semua",
+    "website": "https://ebible.org/Scriptures/details.php?id=indags",
+    "licenseUrl": "https://ebible.org/Scriptures/details.php?id=indags",
+    "licenseNotes": null,
+    "shortName": "AGS",
+    "englishName": "Indonesian Bible for All",
+    "language": "ind",
+    "textDirection": "ltr",
+    "sha256": "60f2a00fd20e48c8cbbf1b3e92b1fafdb04dd0ba875c1ec4ec36032afb369098",
+    "availableFormats": [
+      "json"
+    ],
+    "listOfBooksApiLink": "/api/ind_ags/books.json",
+    "numberOfBooks": 27,
+    "totalNumberOfChapters": 260,
+    "totalNumberOfVerses": 7959,
+    "languageName": "Indonesia",
+    "languageEnglishName": "Indonesian"
+  },
+  {
+    "id": "ind_ayt",
+    "name": "Alkitab Yang Terbuka",
+    "website": "https://ebible.org/Scriptures/details.php?id=indayt",
+    "licenseUrl": "https://ebible.org/Scriptures/details.php?id=indayt",
+    "licenseNotes": null,
+    "shortName": "AYT",
+    "englishName": "Indonesian AYT Bible",
+    "language": "ind",
+    "textDirection": "ltr",
+    "sha256": "4269ef50854c298173e215f3d2d10538056e18bb6fcd32957f34c255d8ecb12f",
+    "availableFormats": [
+      "json"
+    ],
+    "listOfBooksApiLink": "/api/ind_ayt/books.json",
+    "numberOfBooks": 66,
+    "totalNumberOfChapters": 1189,
+    "totalNumberOfVerses": 31102,
+    "languageName": "Indonesia",
+    "languageEnglishName": "Indonesian"
+  },
+  {
+    "id": "ind_obo",
+    "name": "Alkitab Terjemahan Sederhana Indonesia, Edisi Ketiga",
+    "website": "https://ebible.org/Scriptures/details.php?id=ind",
+    "licenseUrl": "https://ebible.org/Scriptures/details.php?id=ind",
+    "licenseNotes": null,
+    "shortName": "OBO",
+    "englishName": "Indonesian Bible (TSI)",
+    "language": "ind",
+    "textDirection": "ltr",
+    "sha256": "01f327eca48c79ec8c0410383f6df1df8f240ba4d772ad1c3a27491176ca3054",
+    "availableFormats": [
+      "json"
+    ],
+    "listOfBooksApiLink": "/api/ind_obo/books.json",
+    "numberOfBooks": 48,
+    "totalNumberOfChapters": 762,
+    "totalNumberOfVerses": 20650,
+    "languageName": "Indonesia",
+    "languageEnglishName": "Indonesian"
+  }
+]
