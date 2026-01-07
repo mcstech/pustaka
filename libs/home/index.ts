@@ -1,6 +1,6 @@
 import { Context } from "fresh";
 import { client } from "@/libs/quran.ts";
-import ALKITAB from "@/libs/bible/ind_ayt/books.json" with { type: "json" };
+import ALKITAB from "@/data/bible/ind_ayt/books.json" with { type: "json" };
 import { TranslationBooks } from "@/types/bible/books.ts";
 import { State } from "@/utils.ts";
 
