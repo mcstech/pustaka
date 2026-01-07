@@ -8,7 +8,7 @@ export function AlKitabBooksList({ kitab }: AlKitabListProps) {
     <div class="py-20 sm:py-10">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 class="text-center text-lg/8 font-semibold text-primary">{kitab.translation.name}</h2>
-        <div class="mx-auto grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none">
+        <div class="mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none">
           {kitab.books.map((book) => (
             <AlKitabBookItem key={book.id} book={book} />
           ))}
