@@ -1,24 +1,13 @@
 import { Context } from "fresh";
-import { client } from "@/libs/quran.ts";
 import ALKITAB from "@/data/bible/ind_ayt/books.json" with { type: "json" };
+import ALQURAN from "@/data/quran/surahs.json" with { type: "json" };
 import { TranslationBooks } from "@/types/bible/books.ts";
 import { State } from "@/utils.ts";
+import { Surah } from "@/types/quran/surah.ts";
 
 async function prepareHome(ctx: Context<State>) {
-  const surahs = await client.chapters.findAll();
-
-  if (surahs instanceof Error) {
-    return new Response(`Ralat mendapatkan surah: ${surahs.message}`, {
-      status: 500,
-    });
-  }
-  
-  if (!surahs) {
-    return new Response("Tiada surah ditemui", { status: 404 });
-  }
-
   ctx.state.quran = {
-    chapters: surahs,
+    chapters: ALQURAN.chapters as unknown as Surah[],
   }
 
   // normalize textDirection to allowed 'ltr' | 'rtl' values

@@ -1,6 +1,6 @@
 import { createDefine } from "fresh";
-import { Chapter } from "@quranjs/api";
 import { TranslationBooks } from "./types/bible/books.ts";
+import { Surah } from "./types/quran/surah.ts";
 
 // This specifies the type of "ctx.state" which is used to share
 // data among middlewares, layouts and routes.
@@ -10,7 +10,7 @@ export interface State {
   ogImage?: string;
   noIndex?: boolean;
   quran: {
-    chapters: Chapter[];
+    chapters: Surah[];
   },
   alkitab: {
     books: TranslationBooks;
