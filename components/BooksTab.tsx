@@ -3,8 +3,8 @@ export function BooksTab(props: { option?: string }) {
 
   return (
     <div role="tablist" class="tabs tabs-box tabs-lg">
-      <div class="tab" aria-selected={option === "quran" ? "true" : "false"} role="tab"><form method="GET"><input type="hidden" name="option" value="quran" /><button type="submit" aria-label="Al-Quran">Al-Quran</button></form></div>
-      <div class="tab" aria-selected={option === "alkitab" ? "true" : "false"} role="tab"><form method="GET"><input type="hidden" name="option" value="alkitab" /><button type="submit" aria-label="Al-Kitab">Al-Kitab</button></form></div>
+      <a role="tab" class={`tab${option === "quran" ? " tab-active" : ""}`} href="?option=quran">Al-Quran</a>
+      <a role="tab" class={`tab${option === "alkitab" ? " tab-active" : ""}`} href="?option=alkitab">Al-Kitab</a>
     </div>
   )
 }
