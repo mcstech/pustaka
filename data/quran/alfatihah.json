@@ -1,0 +1,777 @@
+{
+  "verses": [
+    {
+      "id": 1,
+      "verse_number": 1,
+      "verse_key": "1:1",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 1,
+          "position": 1,
+          "audio_url": "wbw/001_001_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 2,
+          "text": "ﭑ",
+          "translation": {
+            "text": "dengan nama",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "bis'mi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 2,
+          "position": 2,
+          "audio_url": "wbw/001_001_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 2,
+          "text": "ﭒ",
+          "translation": {
+            "text": "Allah",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-lahi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 3,
+          "position": 3,
+          "audio_url": "wbw/001_001_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 2,
+          "text": "ﭓ",
+          "translation": {
+            "text": "Maha Pengasih",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-raḥmāni",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 4,
+          "position": 4,
+          "audio_url": "wbw/001_001_004.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 2,
+          "text": "ﭔ",
+          "translation": {
+            "text": "Maha Penyayang",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-raḥīmi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 5,
+          "position": 5,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 2,
+          "text": "ﭕ",
+          "translation": {
+            "text": "(1)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 181444,
+          "resource_id": 33,
+          "text": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "verse_number": 2,
+      "verse_key": "1:2",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 1130,
+          "position": 1,
+          "audio_url": "wbw/001_002_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 3,
+          "text": "ﭖ",
+          "translation": {
+            "text": "pujian",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "al-ḥamdu",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 1131,
+          "position": 2,
+          "audio_url": "wbw/001_002_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 3,
+          "text": "ﭗ",
+          "translation": {
+            "text": "bagi Allah",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "lillahi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 1132,
+          "position": 3,
+          "audio_url": "wbw/001_002_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 3,
+          "text": "ﭘ",
+          "translation": {
+            "text": "Tuhan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "rabbi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 1133,
+          "position": 4,
+          "audio_url": "wbw/001_002_004.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 3,
+          "text": "ﭙ",
+          "translation": {
+            "text": "alam semesta",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-ʿālamīna",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 1134,
+          "position": 5,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 3,
+          "text": "ﭚ",
+          "translation": {
+            "text": "(2)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 177234,
+          "resource_id": 33,
+          "text": "Segala puji bagi Allah, Tuhan seluruh alam,"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "verse_number": 3,
+      "verse_key": "1:3",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 2953,
+          "position": 1,
+          "audio_url": "wbw/001_003_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭛ",
+          "translation": {
+            "text": "Maha Pengasih",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "al-raḥmāni",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 2954,
+          "position": 2,
+          "audio_url": "wbw/001_003_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭜ",
+          "translation": {
+            "text": "Maha Penyayang",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-raḥīmi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 2955,
+          "position": 3,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭝ",
+          "translation": {
+            "text": "(3)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 177531,
+          "resource_id": 33,
+          "text": "Yang Maha Pengasih, Maha Penyayang,"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "verse_number": 4,
+      "verse_key": "1:4",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 3252,
+          "position": 1,
+          "audio_url": "wbw/001_004_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭞ",
+          "translation": {
+            "text": "Penguasa",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "māliki",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 3253,
+          "position": 2,
+          "audio_url": "wbw/001_004_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭟ",
+          "translation": {
+            "text": "hari",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "yawmi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 3254,
+          "position": 3,
+          "audio_url": "wbw/001_004_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭠ",
+          "translation": {
+            "text": "pembalasan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-dīni",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 3255,
+          "position": 4,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 4,
+          "text": "ﭡ",
+          "translation": {
+            "text": "(4)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 182987,
+          "resource_id": 33,
+          "text": "Pemilik hari pembalasan.<sup foot_note=236248>1</sup>"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "verse_number": 5,
+      "verse_key": "1:5",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 5334,
+          "position": 1,
+          "audio_url": "wbw/001_005_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭢ",
+          "translation": {
+            "text": "hanya kepadaMu",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "iyyāka",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 5335,
+          "position": 2,
+          "audio_url": "wbw/001_005_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭣ",
+          "translation": {
+            "text": "kami menyembah",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "naʿbudu",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 5336,
+          "position": 3,
+          "audio_url": "wbw/001_005_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭤ",
+          "translation": {
+            "text": "dan hanya kepadaMu",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "wa-iyyāka",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 5337,
+          "position": 4,
+          "audio_url": "wbw/001_005_004.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭥ",
+          "translation": {
+            "text": "kami mohon pertolongan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "nastaʿīnu",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 5338,
+          "position": 5,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭦ",
+          "translation": {
+            "text": "(5)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 182918,
+          "resource_id": 33,
+          "text": "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "verse_number": 6,
+      "verse_key": "1:6",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 6844,
+          "position": 1,
+          "audio_url": "wbw/001_006_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 5,
+          "text": "ﭧ",
+          "translation": {
+            "text": "tunjukkan kami",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "ih'dinā",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 6845,
+          "position": 2,
+          "audio_url": "wbw/001_006_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭨ",
+          "translation": {
+            "text": "jalan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-ṣirāṭa",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 6846,
+          "position": 3,
+          "audio_url": "wbw/001_006_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭩ",
+          "translation": {
+            "text": "lurus",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-mus'taqīma",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 6847,
+          "position": 4,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭪ",
+          "translation": {
+            "text": "(6)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 181877,
+          "resource_id": 33,
+          "text": "Tunjukilah kami jalan yang lurus,<sup foot_note=236249>1</sup>"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "verse_number": 7,
+      "verse_key": "1:7",
+      "hizb_number": 1,
+      "rub_el_hizb_number": 1,
+      "ruku_number": 1,
+      "manzil_number": 1,
+      "sajdah_number": null,
+      "text_uthmani": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "page_number": 1,
+      "juz_number": 1,
+      "words": [
+        {
+          "id": 8411,
+          "position": 1,
+          "audio_url": "wbw/001_007_001.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭫ",
+          "translation": {
+            "text": "jalan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "ṣirāṭa",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8412,
+          "position": 2,
+          "audio_url": "wbw/001_007_002.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭬ",
+          "translation": {
+            "text": "orang-orang yang",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "alladhīna",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8413,
+          "position": 3,
+          "audio_url": "wbw/001_007_003.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 6,
+          "text": "ﭭ",
+          "translation": {
+            "text": "diberi nikmat",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "anʿamta",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8414,
+          "position": 4,
+          "audio_url": "wbw/001_007_004.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 7,
+          "text": "ﭮ",
+          "translation": {
+            "text": "kepadanya",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "ʿalayhim",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8415,
+          "position": 5,
+          "audio_url": "wbw/001_007_005.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 7,
+          "text": "ﭯ",
+          "translation": {
+            "text": "bukan",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "ghayri",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8416,
+          "position": 6,
+          "audio_url": "wbw/001_007_006.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 7,
+          "text": "ﭰ",
+          "translation": {
+            "text": "orang yang dimurkai",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-maghḍūbi",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8417,
+          "position": 7,
+          "audio_url": "wbw/001_007_007.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 7,
+          "text": "ﭱ",
+          "translation": {
+            "text": "kepadanya",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "ʿalayhim",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8418,
+          "position": 8,
+          "audio_url": "wbw/001_007_008.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 8,
+          "text": "ﭲ",
+          "translation": {
+            "text": "dan tidak",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "walā",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8419,
+          "position": 9,
+          "audio_url": "wbw/001_007_009.mp3",
+          "char_type_name": "word",
+          "page_number": 1,
+          "line_number": 8,
+          "text": "ﭳ",
+          "translation": {
+            "text": "orang-orang yang sesat",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": "l-ḍālīna",
+            "language_name": "english"
+          }
+        },
+        {
+          "id": 8420,
+          "position": 10,
+          "audio_url": null,
+          "char_type_name": "end",
+          "page_number": 1,
+          "line_number": 8,
+          "text": "ﭴ",
+          "translation": {
+            "text": "(7)",
+            "language_name": "indonesian"
+          },
+          "transliteration": {
+            "text": null,
+            "language_name": "english"
+          }
+        }
+      ],
+      "translations": [
+        {
+          "id": 182567,
+          "resource_id": 33,
+          "text": "(yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat.<sup foot_note=236250>1</sup>"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "per_page": 10,
+    "current_page": 1,
+    "next_page": null,
+    "total_pages": 1,
+    "total_records": 7
+  }
+}
