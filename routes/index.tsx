@@ -40,7 +40,7 @@ export default define.page<typeof handler>(function Home(ctx) {
         <HeroForm />
       </Hero>
       {option === "quran" && <QuranChaptersList chapters={ctx.state.quran.chapters} />}
-      {option === "alkitab" && <AlKitabBooksList kitab={ctx.state.alkitab.books} />}
+      {option === "alkitab" && <AlKitabBooksList kitab={ctx.state.alkitab} />}
     </>
   );
 });

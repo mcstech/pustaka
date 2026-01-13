@@ -19,9 +19,7 @@ async function prepareHome(ctx: Context<State>) {
     },
   } as unknown as TranslationBooks;
 
-  ctx.state.alkitab = {
-    books: alkitabNormalized,
-  }
+  ctx.state.alkitab = alkitabNormalized
 
   return await ctx.next();
 };

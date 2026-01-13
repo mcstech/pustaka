@@ -12,9 +12,7 @@ export interface State {
   quran: {
     chapters: Surah[];
   },
-  alkitab: {
-    books: TranslationBooks;
-  }
+  alkitab: TranslationBooks;
 }
 
 export const define = createDefine<State>();
