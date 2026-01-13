@@ -51,36 +51,37 @@ export function BookToC({ data, selected }: BookToCProps) {
       <label for="quran-drawer" aria-label="open sidebar">
         <i class="ph-duotone ph-list-numbers text-xl is-drawer-open:hidden" />
       </label>
-      <div class="overscroll-contain carousel carousel-end carousel-vertical h-[calc(100vh-3.767rem-2.75rem)] sm:h-[calc(100vh-3.767rem)] is-drawer-close:hidden">
-        <ul class="list bg-base-100 me-0 ms-0 ps-0">
-          <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Surah</li>
-          {data.map((item) => {
-            return (
-              <li class="list-row data-selected:bg-base-300 rounded-none" data-selected={item.id === selected}>
-                <a class="group" href={typeof selected === "number" ? `/quran/${item.id}` : `/kitab/${item.id}`}>
-                  <div class="text-xs font-bold opacity-30 tabular-nums">{item.id}</div>
-                  <div class="list-col-grow">
-                    <p class="list-col-wrap">{typeof selected === 'number' ? (item as Surah).name_complex : (item as TranslationBooks["books"][0]).commonName}</p>
-                  </div>
-                </a>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-      {selectedSurah && Object.keys(selectedSurah).length && (
-        <div class="overscroll-contain carousel carousel-end carousel-vertical h-[calc(100vh-3.767rem-2.75rem)] sm:h-[calc(100vh-3.767rem)] is-drawer-close:hidden">
+      <div class="overscroll-contain h-[calc(100dvh-3.767rem-2.75rem)] sm:h-[calc(100vh-3.767rem)]">
+        <div class="carousel carousel-end carousel-vertical h-full is-drawer-close:hidden">
           <ul class="list bg-base-100 me-0 ms-0 ps-0">
-            <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Ayat</li>
-            {selectedSurahVerses.map((verseNumber) => (
-              <li class="list-row">
-                <div class="text-xl font-thin opacity-30 tabular-nums">{verseNumber}</div>
-              </li>
-            ))}
+            <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Surah</li>
+            {data.map((item) => {
+              return (
+                <li class="list-row data-selected:bg-base-300 rounded-none" data-selected={item.id === selected}>
+                  <a class="group" href={typeof selected === "number" ? `/quran/${item.id}` : `/kitab/${item.id}`}>
+                    <div class="text-xs font-bold opacity-30 tabular-nums">{item.id}</div>
+                    <div class="list-col-grow">
+                      <p class="list-col-wrap">{typeof selected === 'number' ? (item as Surah).name_complex : (item as TranslationBooks["books"][0]).commonName}</p>
+                    </div>
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </div>
-      )}
-      
+        {selectedSurah && Object.keys(selectedSurah).length && (
+          <div class="carousel carousel-end carousel-vertical is-drawer-close:hidden">
+            <ul class="list bg-base-100 me-0 ms-0 ps-0">
+              <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Ayat</li>
+              {selectedSurahVerses.map((verseNumber) => (
+                <li class="list-row">
+                  <div class="text-xl font-thin opacity-30 tabular-nums">{verseNumber}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
