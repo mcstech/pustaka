@@ -37,7 +37,7 @@ export function DrawerSidebar({ isQuran, data, selected, children }: DrawerProps
           <li class="sm:hidden">
             <DrawerBookSelector isQuran={isQuran} />
           </li>
-          <li class="is-drawer-open:-mx-2">
+          <li class="is-drawer-open:-mx-2 is-drawer-open:overflow-hidden">
             <BookToC data={data} selected={selected} />
           </li>
           {children}
