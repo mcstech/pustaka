@@ -168,7 +168,7 @@ type ChapterContent = ChapterHeading | ChapterLineBreak | ChapterVerse | Chapter
 /**
  * A heading in a chapter.
  */
-interface ChapterHeading {
+export interface ChapterHeading {
     /**
      * Indicates that the content represents a heading.
      */
@@ -196,7 +196,7 @@ interface ChapterLineBreak {
  * These are often used included as informational content that appeared in the original manuscripts.
  * For example, Psalms 49 has the Hebrew Subtitle "To the choirmaster. A Psalm of the Sons of Korah."
  */
-interface ChapterHebrewSubtitle {
+export interface ChapterHebrewSubtitle {
     /**
      * Indicates that the content represents a Hebrew Subtitle.
      */
@@ -212,7 +212,7 @@ interface ChapterHebrewSubtitle {
 /**
  * A verse in a chapter.
  */
-interface ChapterVerse {
+export interface ChapterVerse {
     /**
      * Indicates that the content is a verse.
      */
