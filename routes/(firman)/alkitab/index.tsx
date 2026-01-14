@@ -12,9 +12,9 @@ export default define.page(function Home(ctx) {
   const chapterContent = chapters.filter((chapter) => !['heading'].includes(chapter.type));
 
   return (
-    <div class="mx-auto max-w-5xl px-0 py-3 lg:px-8">
+    <div class="mx-auto max-w-5xl px-0 py-3 lg:px-8 space-y-3">
       {headingTitle && (
-        <h1 class="text-3xl font-bold text-gray-900">
+        <h1 class="text-3xl font-bold text-gray-900 uppercase text-center">
           {headingTitle}
         </h1>
       )}
