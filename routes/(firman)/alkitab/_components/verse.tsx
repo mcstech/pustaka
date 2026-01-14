@@ -6,7 +6,7 @@ export function AlKitabVerse({ chapter, textDirection }: { chapter: ChapterVerse
   const verseNumber = chapter.number;
 
   return (
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 prose">
       <div class="text-2xl font-thin opacity-30 tabular-nums text-right">{verseNumber}</div>
       <div class="flex-1 [&_blockquote]:max-w-md [&_blockquote]:mx-auto">
       {chapter.content.map((content, index) => {
