@@ -31,7 +31,7 @@ async function prepareFirman(ctx: Context<State>) {
     };
   } else if (url.pathname.startsWith("/alkitab")) {
     const chapters = BIBLE.books.map((book) => {
-      if (book.id === "gen") {
+      if (book.id === "GEN") {
         return {
           ...book,
           translationBookChapter: GENESIS
@@ -39,7 +39,10 @@ async function prepareFirman(ctx: Context<State>) {
       }
       return book;
     });
-    ctx.state.alkitab = chapters as unknown as State["alkitab"];
+    ctx.state.alkitab = {
+      ...BIBLE,
+      books: chapters,
+    } as unknown as State["alkitab"];
   }
 
   return await ctx.next();
