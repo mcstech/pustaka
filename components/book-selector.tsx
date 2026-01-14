@@ -25,7 +25,7 @@ export function BookSelector() {
   return (
     <div role="tablist" class="tabs tabs-box tabs-xs">
       <a role="tab" href="/quran" class="tab aria-[current]:tab-active">Al-Quran</a>
-      <a role="tab" href="/kitab" class="tab aria-[current]:tab-active">Al-Kitab</a>
+      <a role="tab" href="/alkitab" class="tab aria-[current]:tab-active">Al-Kitab</a>
     </div>
   )
 }
