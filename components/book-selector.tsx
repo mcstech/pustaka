@@ -51,7 +51,7 @@ export function BookToC({ data, selected }: BookToCProps) {
       <label for="quran-drawer" aria-label="open sidebar">
         <i class="ph-duotone ph-list-numbers text-xl is-drawer-open:hidden" />
       </label>
-      <div class="overscroll-contain h-[calc(100dvh-3.767rem-2.75rem)] sm:h-[calc(100vh-3.767rem)]">
+      <div class="overscroll-contain h-[calc(100dvh-3.767rem-2.75rem)] sm:h-[calc(100vh-4.767rem)]">
         <div class="carousel carousel-end carousel-vertical h-full is-drawer-close:hidden">
           <ul class="list bg-base-100 me-0 ms-0 ps-0">
             <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Surah</li>
