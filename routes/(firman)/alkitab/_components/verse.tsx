@@ -6,9 +6,9 @@ export function AlKitabVerse({ chapter, textDirection }: { chapter: ChapterVerse
   const verseNumber = chapter.number;
 
   return (
-    <div class="flex items-center-safe gap-4">
+    <div class="flex items-center gap-4">
       <div class="text-2xl font-thin opacity-30 tabular-nums text-right">{verseNumber}</div>
-      <div class="flex-1 flex flex-col justify-center">
+      <div class="flex-1 [&_blockquote]:max-w-md [&_blockquote]:mx-auto">
       {chapter.content.map((content, index) => {
         if (typeof content === "string") {
           return (
@@ -19,7 +19,8 @@ export function AlKitabVerse({ chapter, textDirection }: { chapter: ChapterVerse
             <Fragment key={index}>
               {content.poem && (
                 <blockquote class="text-base/7 font-semibold text-gray-900 italic">
-                  <span class="text-lg font-thin opacity-30 tabular-nums">{content.poem}</span> {content.text}
+                  <span class="text-lg font-thin opacity-30 tabular-nums">{content.poem}</span>
+                  {content.text}
                 </blockquote>
               )}
             </Fragment>
