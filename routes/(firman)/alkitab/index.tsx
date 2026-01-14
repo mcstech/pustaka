@@ -1,6 +1,6 @@
 import { define } from "@/utils.ts";
 import { HebrewSubtitle } from "./_components/hebrew-subtitle.tsx";
-import { AlKitabVerse } from "./_components/Verse.tsx";
+import { AlKitabVerse } from "./_components/verse.tsx";
 
 export default define.page(function Home(ctx) {
   const alkitab = ctx.state.alkitab;
