@@ -1,4 +1,5 @@
 import { Surah } from "@/types/quran/surah.ts";
+import { cn } from "@/libs/utils.ts";
 
 interface QuranChaptersListProps {
   chapters: Surah[];
@@ -25,9 +26,7 @@ export function QuranChapterItem({ chapter }: { chapter: Surah }) {
       <a class="group no-underline" href={href}>
         <div class="flex justify-between items-center py-4 px-5 hover:bg-accent/50 transition-colors duration-200">
           <div class="flex items-center">
-            <div class="relative bg-base-300 flex items-center size-[calc(2.5*1rem)] rounded rotate-0 me-1 text-center before:absolute before:top-0 before:left-0 before:size-[calc(2.5*1rem)] before:bg-base-300 before:rotate-135 [&_p]:w-full [&_p]:z-10 [&_p]:font-bold">
-              <p>{chapter.id}</p>
-            </div>
+            <ChapterIndex id={chapter.id} />
             <h4 aria-label={chapter.name_simple} class="ml-4 text-lg font-semibold">
               {chapter.name_complex}
               <span class="block text-sm font-normal text-foreground/70">{chapter.translated_name.name}</span>
@@ -45,6 +44,14 @@ function ArabicChapterName({ name, versesCount }: { name: string; versesCount: n
     <div class="flex flex-col items-center">
       <span translate={false}>{name}</span>
       <span class="text-sm">{versesCount} ayat</span>
+    </div>
+  )
+}
+
+export function ChapterIndex({ id, class: className }: { id: number; class?: string }) {
+  return (
+    <div class={cn("relative bg-base-300 flex items-center size-[calc(2.5*1rem)] rounded rotate-0 me-1 text-center before:absolute before:top-0 before:left-0 before:size-[calc(2.5*1rem)] before:bg-base-300 before:rotate-135 [&_p]:w-full [&_p]:z-10 [&_p]:font-bold", className)}>
+      <p>{id}</p>
     </div>
   )
 }
