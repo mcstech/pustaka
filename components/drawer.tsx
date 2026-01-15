@@ -13,7 +13,7 @@ export function Drawer({ children, isQuran, data, selected }: DrawerProps) {
       <input id="quran-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         <HeaderDrawer />
-        {children}
+        <main id="content">{children}</main>
       </div>
 
       <DrawerSidebar isQuran={isQuran} data={data} selected={selected}>
@@ -30,7 +30,7 @@ export function Drawer({ children, isQuran, data, selected }: DrawerProps) {
 
 export function DrawerSidebar({ isQuran, data, selected, children }: DrawerProps) {
   return (
-    <div class="drawer-side is-drawer-close:overflow-visible">
+    <aside class="drawer-side is-drawer-close:overflow-visible">
       <label for="quran-drawer" aria-label="close sidebar" class="drawer-overlay" />
       <div class="flex min-h-full flex-col items-start bg-base-200 is-drawer-close:w-14 is-drawer-open:w-5/6 is-drawer-open:sm:w-80">
         <ul class="menu w-full grow">
@@ -43,6 +43,6 @@ export function DrawerSidebar({ isQuran, data, selected, children }: DrawerProps
           {children}
         </ul>
       </div>
-    </div>
+    </aside>
   )
 }
