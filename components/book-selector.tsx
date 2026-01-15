@@ -23,7 +23,7 @@ export function DrawerBookSelector({ isQuran }: BookSelectorProps) {
 
 export function BookSelector() {
   return (
-    <div role="tablist" class="tabs tabs-box tabs-xs">
+    <div role="tablist" class="tabs tabs-box tabs-sm">
       <a role="tab" href="/quran" class="tab aria-[current]:tab-active">Al-Quran</a>
       <a role="tab" href="/alkitab" class="tab aria-[current]:tab-active">Al-Kitab</a>
     </div>
@@ -51,7 +51,7 @@ export function BookToC({ data, selected }: BookToCProps) {
       <label for="quran-drawer" aria-label="open sidebar">
         <i class="ph-duotone ph-list-numbers text-xl is-drawer-open:hidden" />
       </label>
-      <div class="overscroll-contain h-[calc(100dvh-3.767rem-2.75rem)] sm:h-[calc(100vh-4.767rem)]">
+      <div class="overscroll-contain is-drawer-open:h-[calc(100dvh-3.767rem-2.75rem)] is-drawer-open:sm:h-[calc(100vh-4.767rem)]">
         <div class="carousel carousel-end carousel-vertical h-full is-drawer-close:hidden">
           <ul class="list bg-base-100 me-0 ms-0 ps-0">
             <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Surah</li>
