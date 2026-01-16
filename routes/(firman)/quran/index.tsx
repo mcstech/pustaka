@@ -20,7 +20,7 @@ export default define.page(function Home(ctx) {
               {verse.id}. {verse.translations?.[0].text}
             </dt>
             <dd dir="rtl" class="mt-4 lg:col-span-7 lg:mt-0">
-              <p class="text-base/7 text-gray-600 rtl:mr-3 font-uthmanic-hafs">
+              <p class="text-2xl rtl:mr-3 font-lpmq leading-loose">
                 {verse.text_uthmani}
               </p>
             </dd>

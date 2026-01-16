@@ -8,15 +8,18 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'UthmanicHafs';
-  src: local('KFGQPC HAFS Uthmanic Script'),
-    url('/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.woff2') format('woff2'),
-    url('/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.ttf') format('truetype');
-  font-display: swap;
+	font-family: 'lpmq';
+	src: url('/fonts/quran/lpmq.otf') format('opentype');
+	font-display: swap;
+}
+
+.font-arabic {
+	font-family: 'lpmq', 'Traditional Arabic', Arial, sans-serif;
+	line-height: 2;
 }
 @theme {
   --font-surah-names: "surahnames", sans-serif;
-  --font-uthmanic-hafs: "UthmanicHafs", serif;
+  --font-lpmq: 'lpmq', 'Traditional Arabic', Arial, sans-serif;
 }
 @plugin "daisyui";
 @plugin "daisyui/theme" {

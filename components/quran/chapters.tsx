@@ -42,7 +42,7 @@ export function QuranChapterItem({ chapter }: { chapter: Surah }) {
 function ArabicChapterName({ name, versesCount }: { name: string; versesCount: number }) {
   return (
     <div class="flex flex-col items-center">
-      <span translate={false}>{name}</span>
+      <span translate={false} class="font-lpmq leading-loose">{name}</span>
       <span class="text-sm">{versesCount} ayat</span>
     </div>
   )
