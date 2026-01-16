@@ -20,7 +20,7 @@ export function Header(props: HeaderProps) {
 
 export function HeaderDrawer(props: HeaderProps) {
   return (
-    <header class="fixed top-4 left-4 right-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:w-7/12 z-99">
+    <header class="fixed top-4 left-4 right-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:w-7/12">
       <nav class={cn("navbar bg-transparent space-x-3 items-center", props.class)}>
         <label for="quran-drawer" aria-label="open sidebar" class="btn btn-circle btn-sm drop-shadow-md">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
@@ -38,7 +38,7 @@ export function HeaderDrawer(props: HeaderProps) {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" class="grow" placeholder="Search" />
+          <input type="search" class="grow" placeholder="Cari" />
           <kbd class="kbd kbd-sm">⌘</kbd>
           <kbd class="kbd kbd-sm">K</kbd>
         </label>
