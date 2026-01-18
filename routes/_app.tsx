@@ -21,6 +21,7 @@ export default define.page(function App({ Component, state, url }) {
           : null}
         {state.noIndex ? <meta name="robots" content="noindex" /> : null}
         <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="oklch(var(--accent))" />
         <script
           type="module"
           // deno-lint-ignore react-no-danger
