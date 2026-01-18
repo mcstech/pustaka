@@ -4,8 +4,7 @@ import { Chapter } from "./_components/chapter-title.tsx";
 export default define.page(function Home(ctx) {
   const quran = ctx.state.quran;
   const alfatihah = quran.chapters.find((chapter) => chapter.id === 1);
-  const verses = alfatihah?.verses || [];
-  console.log(alfatihah)
+  const verses = alfatihah?.verses?.["1"];
   return (
     <div class="mx-auto max-w-5xl px-0 py-26 lg:px-8">
       <Chapter
@@ -14,7 +13,23 @@ export default define.page(function Home(ctx) {
         withBismillah={alfatihah?.bismillah_pre}
       />
       <dl class="mt-20 divide-y divide-gray-900/10">
-        {verses.map((verse) => (
+        {Object.keys(verses?.text ?? {}).map((key) => {
+          const verseText = verses?.text[key];
+          const translationText = verses?.translations["id"]?.text[key];
+          return (
+            <div key={key} class="py-8 first:pt-0 last:pb-0 flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt dir="ltr" class="text-base/7 font-semibold text-gray-900 lg:col-span-5 ltr:ml-3">
+                {key}. {translationText}
+              </dt>
+              <dd dir="rtl" class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-2xl rtl:mr-3 font-lpmq leading-loose">
+                  {verseText}
+                </p>
+              </dd>
+            </div>
+          )
+        })}
+        {/* {verses.map((verse) => (
           <div key={verse.id} class="py-8 first:pt-0 last:pb-0 flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-8">
             <dt dir="ltr" class="text-base/7 font-semibold text-gray-900 lg:col-span-5 ltr:ml-3">
               {verse.id}. {verse.translations?.[0].text}
@@ -25,7 +40,7 @@ export default define.page(function Home(ctx) {
               </p>
             </dd>
           </div>
-        ))}
+        ))} */}
       </dl>
     </div>
   );
