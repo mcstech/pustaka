@@ -23,7 +23,7 @@ export default define.page(function App({ Component, state, url }) {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Pustaka" />
         <meta property="og:url" content={url.href} />
-        {state.meta.ogImage
+        {state.meta?.ogImage
           ? <meta property="og:image" content={state.meta.ogImage} />
           : null}
         {state.noIndex ? <meta name="robots" content="noindex" /> : null}
@@ -32,7 +32,14 @@ export default define.page(function App({ Component, state, url }) {
         <meta name="twitter:card" content="summary_large_image" />
         <link
           rel="preload"
-          href={asset("/fonts/DMSans/DMSans-Variable.woff2")}
+          href={asset("/fonts/quran/lpmq.woff")}
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href={asset("/fonts/quran/surah-names/v1/surah-names.woff2")}
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
