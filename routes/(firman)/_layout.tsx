@@ -11,10 +11,11 @@ export default define.layout((props) => {
   const currentSelectedBook = currentSurahPath && !['quran', 'alkitab'].includes(currentSurahPath)
     ? currentSurahPath
     : 'GEN';
-  const isQuran = currentURL.pathname.startsWith("/quran");
+  const isQuran = currentURL.pathname.startsWith("/quran") || currentURL.pathname.startsWith("/wejangan");
   const kitab = isQuran ? state.quran : state.alkitab;
-  const listTitles = 'chapters' in kitab ? kitab.chapters : kitab.books;
+  const listTitles = kitab && 'chapters' in kitab ? kitab.chapters : kitab.books;
   const selected = isQuran ? currentSelectedChapter : currentSelectedBook;
+
   return (
     <Drawer isQuran={isQuran} data={listTitles} selected={selected}>
       <Component />
