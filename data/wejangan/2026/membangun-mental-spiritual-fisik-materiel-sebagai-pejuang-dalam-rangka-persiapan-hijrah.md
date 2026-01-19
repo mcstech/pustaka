@@ -2,6 +2,7 @@
 title: 'MEMBANGUN MENTAL SPIRITUAL DAN FISIK MATERIEL SEBAGAI PEJUANG DALAM RANGKA PERSIAPAN HIJRAJ'
 date: '2026-01-18'
 author: 'IM2'
+description: 'Mungkin saudara ada yang bertanya, mengapa kita harus menyusun barisan (struktur)? Mengapa tidak memakai cara damai saja atau melalui seminar-seminar di kampus?'
 ---
 # KONSEKUENSI PERSAKSIAN ADALAH MENAATI PERINTAH TUAN SEMESTA ALAM DAN MESIAS-NYA
 
