@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @font-face {
   font-family: 'surahnames';
   src: url('/fonts/quran/surah-names/v1/sura_names.woff2'),
