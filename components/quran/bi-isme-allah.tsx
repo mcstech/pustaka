@@ -1,11 +1,7 @@
 export function Bismillahirrahmanirrahim() {
   return (
-    <img
-      class="my-6"
-      src="/bismillah.svg"
-      width="128"
-      height="128"
-      alt="Bismillahirrahmanirrahim"
-    />
+    <p dir="rtl" class="text-3xl font-lpmq leading-loose text-right">
+      بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+    </p>
   )
 }
