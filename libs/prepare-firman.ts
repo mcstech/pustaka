@@ -6,7 +6,7 @@ import { State } from "@/utils.ts";
 
 async function prepareFirman(ctx: Context<State>) {
   const url = ctx.url;
-  if (url.pathname.startsWith("/quran")) {
+  if (url.pathname.startsWith("/quran") || url.pathname.startsWith("/wejangan")) {
     const chapters = ALQURAN.chapters;
     ctx.state.quran = {
       chapters,
