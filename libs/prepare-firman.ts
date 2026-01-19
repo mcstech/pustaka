@@ -11,7 +11,6 @@ async function prepareFirman(ctx: Context<State>) {
     ctx.state.quran = {
       chapters,
     };
-    console.log('hey', ctx.state.quran.chapters.length);
   } else if (url.pathname.startsWith("/alkitab")) {
     const chapters = BIBLE.books.map((book) => {
       if (book.id === "GEN") {
