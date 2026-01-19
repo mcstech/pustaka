@@ -1,19 +1,23 @@
 ---
-title: 'MEMBANGUN MENTAL SPIRITUAL DAN FISIK MATERIEL SEBAGAI PEJUANG DALAM RANGKA PERSIAPAN HIJRAJ'
+title: 'MEMBANGUN MENTAL SPIRITUAL DAN FISIK MATERIEL SEBAGAI PEJUANG DALAM RANGKA PERSIAPAN HIJRAH'
 date: '2026-01-18'
 author: 'IM2'
 description: 'Mungkin saudara ada yang bertanya, mengapa kita harus menyusun barisan (struktur)? Mengapa tidak memakai cara damai saja atau melalui seminar-seminar di kampus?'
 ---
-# KONSEKUENSI PERSAKSIAN ADALAH MENAATI PERINTAH TUAN SEMESTA ALAM DAN MESIAS-NYA
+## KONSEKUENSI PERSAKSIAN ADALAH MENAATI PERINTAH TUAN SEMESTA ALAM DAN MESIAS-NYA
 
+<pre dir=rtl>
 اِنَّ اللّٰهَ يُحِبُّ الَّذِيْنَ يُقَاتِلُوْنَ فِيْ سَبِيْلِهٖ صَفًّا كَاَنَّهُمْ بُنْيَانٌ مَّرْصُوْصٌ
+</pre>
 
 > Sesungguhnya Allah mencintai orang-orang yang berperang di Jalan-Nya. Mereka tersusun (dalam struktur) bagaikan suatu bangunan yang kukuh. ([QS. Ash-Shäff [61]: 4](https://pustaka.mcstech.dev/61/4))
 
 Prinsip dan disiplin manajemen kerasulan inilah yang kebanyakan manusia tidak sanggup untuk menggenapinya, yaitu membentuk *Jundullah*. Mungkin saudara ada yang bertanya, mengapa kita harus menyusun barisan (struktur)? Mengapa tidak memakai cara damai saja atau melalui seminar-seminar di kampus? Aku katakan, demikianlah *manhaj* (garis perjuangan) dan sunnah Rasul-Nya. Tidak ada Rasul Allah yang berkolaborasi dengan orang-orang musyrik dalam menegakkan Khilafah atau Kerajaan Allah.
 Maksud dan tujuan pembinaan yang hari ini kita lakukan ialah dalam rangka membentuk satunya ummat, ummatan wasathan, agar tidak ada lagi yang berpikir firqah. Keberadaan komunitas Millah Abraham tidaklah dalam konteks membuat firqah—faksi atau aliran keagamaan baru. Perbedaannya jelas, komunitas Millah Abraham tidak duduk bersama dengan aliran-aliran keagamaan yang hari ini tunduk di bawah naungan orde penguasa.
 
+<pre>
 وَقَدْ نَزَّلَ عَلَيْكُمْ فِى الْكِتٰبِ اَنْ اِذَا سَمِعْتُمْ اٰيٰتِ اللّٰهِ يُكْفَرُ بِهَا وَيُسْتَهْزَاُ بِهَا فَلَا تَقْعُدُوْا مَعَهُمْ حَتّٰى يَخُوْضُوْا فِيْ حَدِيْثٍ غَيْرِهٖٓ ۖ اِنَّكُمْ اِذًا مِّثْلُهُمْ ۗ اِنَّ اللّٰهَ جَامِعُ الْمُنٰفِقِيْنَ وَالْكٰفِرِيْنَ فِيْ جَهَنَّمَ جَمِيْعًاۙ
+</pre>
 
 > Dan sungguh (Allah) telah menurunkan (ketentuan) bagi kalian dalam Al-Kitab bahwa apabila kalian mendengar ayat-ayat Allah diingkari dan diperolok-olokkan, janganlah kalian duduk bersama mereka hingga mereka memasuki pembicaraan yang lain. (Jika demikian) sesungguhnya kalian tentulah sama seperti mereka. Sesungguhnya Allah akan mengumpulkan semua orang munafik dan orang kafir di Jahannam seluruhnya. ([QS. An-Nisã' [4]: 140](https://pustaka.mcstech.dev/4/140))
 
@@ -24,7 +28,9 @@ Meskipun sangat berisiko dimusuhi oleh mayoritas manusia, kita tetap memilih jal
 Orang-orang *Ashhābal Kahfi* yang menyembunyikan keimanannya (*yaktumu imanahu*), merekalah, "*....Innahum fityatun ămanü bi Rabbihim wa zidnähum hudan*-Sesungguhnya mereka adalah pemuda-pemuda yang beriman kepada Rabb mereka dan Kami tambah pula untuk mereka petunjuk" ([QS. Al-Kahfi [18] ayat 13](https://pustaka.mcstech.dev/18/13)), akan menerima misi risalah yang dibawa oleh Rasul Allah. Mereka itulah yang dinamakan Ashhäbal Kahfi yang benar. Abu Bakar, Umar, dan Utsman pun berasal dari golongan Ashhäbal Kahfi, golongan orang-orang yang paling awal mengimani kerasulan Muhammad sebagai sebuah bukti konkret iman kepada Allah. Orang yang mengaku beriman kepada Allah, tetapi menolak kedatangan Rasul-Nya pada zaman ini berarti bukan orang yang sebenar-benarnya beriman. Iman itu merupakan pengejawantahan dari [Al-
 Quran Surat An-Nisã' [4] ayat 80](https://pustaka.mcstech.dev/4/80):
 
+<pre>
 مَنْ يُّطِعِ الرَّسُوْلَ فَقَدْ اَطَاعَ اللّٰهَ ۚ وَمَنْ تَوَلّٰى فَمَآ اَرْسَلْنٰكَ عَلَيْهِمْ حَفِيْظًا
+</pre>
 
 > Siapa saja yang menaati Rasul (Nya), maka sungguh telah menaati Allah. Dan siapa saja yang berpaling, maka Kami tidak mengutus engkau (Rasul Allah) sebagai pemelihara mereka.
 
@@ -55,6 +61,8 @@ rahasia kehidupan di jalan kebenaran yang hari ini Tuan Semesta Alam percayakan 
 
 Bentuk dari tuan-tuan yang lama ini sangat banyak. Tuan yang pertama adalah diri sendiri. Kita bertuan atau ber-*ilah* kepada *hawa nafsu*. Kita ditipu oleh angan-angan yang menipu. Hawa nafsu bisa menjadi kendala bagi manusia untuk beriman kepada Tuan Semesta Alam. Barang siapa yang tidak sadar bahwa di dalam dirinya ada kekuatan negatif yang menarik dirinya ke bawah, maka dirinya tidak bisa naik ke atas (*mi'rāj*). Kita mau terbang ke atas tetapi ia (hawa nafsu) menarik ke bawah. Tuan Semesta Alam berfirman tentang hal ini di dalam [Al-Quran Surat Al-A'räf [7] ayat 176](https://pustaka.mcstech.dev/7/176):
 
+<pre>
 وَلَوْ شِئْنَا لَرَفَعْنٰهُ بِهَا وَلٰكِنَّهٗٓ اَخْلَدَ اِلَى الْاَرْضِ وَاتَّبَعَ هَوٰىهُۚ فَمَثَلُهٗ كَمَثَلِ الْكَلْبِۚ اِنْ تَحْمِلْ عَلَيْهِ يَلْهَثْ اَوْ تَتْرُكْهُ يَلْهَثْۗ ذٰلِكَ مَثَلُ الْقَوْمِ الَّذِيْنَ كَذَّبُوْا بِاٰيٰتِنَاۚ فَاقْصُصِ الْقَصَصَ لَعَلَّهُمْ يَتَفَكَّرُوْنَ
+</pre>
 
 Dan seandainya Kami menghendaki, niscaya Kami tinggikannya dengan (ayat-ayat) itu, tetapi dia cenderung pada dunia dan mengikuti hawa nafsunya. Maka, perumpamaannya seperti anjing, "jika kamu menghalaunya, ia menjulurkan lidahnya, dan jika kamu membiarkannya, dia menjulurkan lidahnya (juga)." Demikian itu adalah perumpamaan kaum yang mendustakan ayat-ayat Kami. Maka, ceritakanlah kisah-kisah itu agar mereka berpikir.
