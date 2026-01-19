@@ -23,6 +23,7 @@
   ],
   "imports": {
     "@/": "./",
+    "@deno/gfm": "jsr:@deno/gfm@^0.11.0",
     "@quranjs/api": "npm:@quranjs/api@^2.0.0",
     "clsx": "npm:clsx@^2.1.1",
     "daisyui": "npm:daisyui@^5.5.14",
