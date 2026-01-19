@@ -22,7 +22,7 @@ export function QuranChaptersList({ chapters }: QuranChaptersListProps) {
 export function QuranChapterItem({ chapter }: { chapter: Surah }) {
   const href = chapter.id === 1 ? '/quran' : `/quran/${chapter.id.toString()}`;
   return (
-    <div class="bg-base-200 border rounded-selector w-full">
+    <div class="bg-base-200 border rounded-selector w-full hover:shadow-lg transition-all">
       <a class="group no-underline" href={href}>
         <div class="flex justify-between items-center py-4 px-5 hover:bg-accent/50 transition-colors duration-200">
           <div class="flex items-center">
