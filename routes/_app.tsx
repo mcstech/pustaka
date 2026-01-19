@@ -1,3 +1,4 @@
+import { asset } from "fresh/runtime";
 import { define } from "../utils.ts";
 
 export default define.page(function App({ Component, state, url }) {
@@ -7,21 +8,35 @@ export default define.page(function App({ Component, state, url }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google" content="notranslate" />
-        {state.title ? <title>{state.title}</title> : null}
-        {state.description
-          ? <meta name="description" content={state.description} />
-          : null}
-        {state.title
-          ? <meta property="og:title" content={state.title} />
-          : null}
-        <meta property="og:type" content="website" />
+        {state.meta?.title && (
+          <>
+            <title>{state.meta.title}</title>
+            <meta property="og:title" content={state.meta.title} />
+          </>
+        )}
+        {state.meta?.description && (
+          <>
+            <meta name="description" content={state.meta.description} />
+            <meta property="og:description" content={state.meta.description} />
+          </>
+        )}
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Pustaka" />
         <meta property="og:url" content={url.href} />
-        {state.ogImage
-          ? <meta property="og:image" content={state.ogImage} />
+        {state.meta.ogImage
+          ? <meta property="og:image" content={state.meta.ogImage} />
           : null}
         {state.noIndex ? <meta name="robots" content="noindex" /> : null}
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="oklch(var(--accent))" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link
+          rel="preload"
+          href={asset("/fonts/DMSans/DMSans-Variable.woff2")}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <script
           type="module"
           // deno-lint-ignore react-no-danger
