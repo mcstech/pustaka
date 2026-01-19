@@ -5,7 +5,10 @@
     "dev": "deno run --env-file -A vite",
     "build": "vite build",
     "start": "deno serve --env-file -A _fresh/server.js",
-    "update": "deno run --env-file -A -r jsr:@fresh/update ."
+    "update": "deno run --env-file -A -r jsr:@fresh/update .",
+    "generate-quran": "deno run --allow-read --allow-write scripts/generate-documents.ts",
+    "generate-bible": "deno run --allow-net --allow-read --allow-write scripts/generate-bible-documents.ts",
+    "prepare-docs": "deno run generate-quran && deno run generate-bible"
   },
   "lint": {
     "rules": {
