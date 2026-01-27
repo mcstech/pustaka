@@ -63,16 +63,6 @@ export function SearchBarTrigger() {
 }
 
 export function SearchBarModal() {
-  const handleClose = () => {
-    const dialog = document.getElementById("docFind") as HTMLDialogElement | null;
-    if (!dialog) return;
-    
-    if (dialog.open) {
-      console.log("closing dialog", dialog);
-      dialog.close();
-    }
-  };
-
   return (
     <dialog
       id="docFind"
@@ -82,7 +72,10 @@ export function SearchBarModal() {
         <SearchBarInput />
         <SearchBarResult />
       </div>
-      <form method="dialog"><button type="reset">close</button></form>
+      {/* Backdrop: clicking outside closes the dialog */}
+      <form method="dialog" class="modal-backdrop">
+        <button type="button">close</button>
+      </form>
     </dialog>
   )
 }
