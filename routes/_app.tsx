@@ -2,6 +2,9 @@ import { asset } from "fresh/runtime";
 import { define } from "../utils.ts";
 
 export default define.page(function App({ Component, state, url }) {
+  const isHomepage = url.pathname === "/";
+  const isQuranPage = url.pathname.startsWith("/quran");
+  const eligibleForQuranFont = isHomepage || isQuranPage;
   return (
     <html>
       <head>
@@ -30,20 +33,25 @@ export default define.page(function App({ Component, state, url }) {
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="oklch(var(--accent))" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link
-          rel="preload"
-          href={asset("/fonts/quran/lpmq.woff")}
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href={asset("/fonts/quran/surah-names/v1/surah-names.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        {/* Preload fonts only on path /quran */}
+        {eligibleForQuranFont && (
+          <>
+            <link
+              rel="preload"
+              href={asset("/fonts/quran/lpmq.woff")}
+              as="font"
+              type="font/woff"
+              crossOrigin="anonymous"
+            />
+            <link
+              rel="preload"
+              href={asset("/fonts/quran/surah-names/v1/surah-names.woff2")}
+              as="font"
+              type="font/woff2"
+              crossOrigin="anonymous"
+            />
+          </>
+        )}
         <script
           type="module"
           // deno-lint-ignore react-no-danger
