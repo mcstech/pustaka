@@ -13,7 +13,7 @@ async function main() {
   const surahsJsonText = await Deno.readTextFile(surahsJsonUrl);
   const surahs = JSON.parse(surahsJsonText) as { chapters: ChapterMeta[] };
 
-  const documents: Array<{ title: string; category: string; href: string; body: string }> = [];
+  const documents: Array<{ title: string; category: string; href: string; body: string; keywords: string[] }> = [];
 
   for (const chapter of surahs.chapters) {
     const id = chapter.id;
@@ -29,6 +29,8 @@ async function main() {
     }
 
     const nameLatin: string = surah.name_latin ?? surah.name_latin ?? surah.name_simple ?? `Surah ${id}`;
+    const nameTranslation: string = surah.translation ?? surah.name_translation ?? "";
+    const title = nameTranslation ? `${nameLatin} (${nameTranslation})` : nameLatin;
 
     // Prefer Indonesian translation if available, else fallback to first available language
     let translationText: Record<string, string> | undefined = surah.translations?.id?.text;
@@ -49,10 +51,11 @@ async function main() {
     for (const ayah of ayahNumbers) {
       const body = translationText[ayah];
       documents.push({
-        title: nameLatin,
+        title,
         category: "quran",
         href: `/quran/${id}/${ayah}`,
         body,
+        keywords: [`${id}:${ayah}`, `${id}/${ayah}`],
       });
     }
   }
