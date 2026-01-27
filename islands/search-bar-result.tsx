@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "preact/compat";
-import { useSignal } from "@preact/signals";
-import { performSearch } from "@/libs/doc-find.ts";
+import { useRef } from "preact/compat";
+import { useSignal, useComputed, effect } from "@preact/signals";
+import { escapeHtml, highlightQuery, performSearch } from "@/libs/doc-find.ts";
 
 export function SearchBarResult() {
   const searchParams = useSignal('');
@@ -9,42 +9,72 @@ export function SearchBarResult() {
   const error = useSignal<string | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const debounceTimerRef = useRef<number | null>(null);
+  const mountedRef = useRef(false);
 
-  useEffect(() => {
+  // Single effect for URL sync - only runs in browser
+  effect(() => {
+    // Early return for SSR
+    if (typeof globalThis === 'undefined' || typeof globalThis.location === 'undefined') {
+      return;
+    }
+
     const updateSearchParams = () => {
-      // read the q param from the url
       const params = new URLSearchParams(globalThis.location.search);
       const q = params.get('q') || '';
+      console.log('URL search param q=', q);
       searchParams.value = q;
     };
 
-    // Update on mount
-    updateSearchParams();
+    // Initial sync on mount - only run once
+    if (!mountedRef.current) {
+      mountedRef.current = true;
+      updateSearchParams();
+    }
 
     // Listen for URL changes (back/forward navigation)
-    globalThis.addEventListener('popstate', updateSearchParams);
-
-    // Listen for visibility changes (when tab becomes active)
-    globalThis.addEventListener('visibilitychange', () => {
+    const handlePopState = () => {
+      console.log('popstate event detected');
+      updateSearchParams();
+    };
+    
+    // Listen for custom URL change events (from search input)
+    const handleUrlChange = () => {
+      console.log('urlchange event detected');
+      updateSearchParams();
+    };
+    
+    // Listen for visibility changes (when returning to tab)
+    const handleVisibility = () => {
       if (!globalThis.document.hidden) {
+        console.log('visibilitychange event detected');
         updateSearchParams();
       }
-    });
-
-    // Periodic check in case URL changes without events
-    const interval = setInterval(updateSearchParams, 500);
-
-    return () => {
-      globalThis.removeEventListener('popstate', updateSearchParams);
-      clearInterval(interval);
     };
-  }, []);
+    
+    globalThis.addEventListener('popstate', handlePopState);
+    globalThis.addEventListener('urlchange', handleUrlChange);
+    globalThis.addEventListener('visibilitychange', handleVisibility);
 
-  useEffect(() => {
+    // Cleanup function - critical for preventing memory leaks
+    return () => {
+      globalThis.removeEventListener('popstate', handlePopState);
+      globalThis.removeEventListener('urlchange', handleUrlChange);
+      globalThis.removeEventListener('visibilitychange', handleVisibility);
+    };
+  });
+
+  // Separate effect for search - reacts to searchParams changes
+  effect(() => {
+    // Early return for SSR
+    if (typeof globalThis === 'undefined' || typeof globalThis.location === 'undefined') {
+      return;
+    }
+    
     // perform search when searchParams changes
     if (!searchParams.value) {
       results.value = [];
       error.value = null;
+      loading.value = false;
       return;
     }
 
@@ -81,41 +111,56 @@ export function SearchBarResult() {
       }
     }, 300);
 
+    // Cleanup function - prevents memory leaks from timers and abort controllers
     return () => {
-      if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+        debounceTimerRef.current = null;
+      }
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+        abortControllerRef.current = null;
+      }
     };
-  }, [searchParams.value]);
+  });
+
+  // Computed signal for showing empty state
+  const showEmptyState = useComputed(() => 
+    !loading.value && !error.value && results.value.length === 0 && searchParams.value
+  );
 
   return (
     <div class="max-h-96 overflow-y-auto">
-        {loading.value && (
-          <div class="p-4 text-center text-gray-500">
-            Searching...
-          </div>
-        )}
+      {loading.value && (
+        <div class="p-4 text-center text-gray-500">
+          Searching...
+        </div>
+      )}
 
-        {error.value && (
-          <div class="p-4 bg-red-100 text-red-700 rounded">
-            {error.value}
-          </div>
-        )}
+      {error.value && (
+        <div class="p-4 bg-red-100 text-red-700 rounded">
+          {error.value}
+        </div>
+      )}
 
-        {!loading.value && !error.value && results.value.length === 0 && searchParams.value && (
-          <div class="p-4 text-center text-gray-500">
-            No results found for "{searchParams.value}"
-          </div>
-        )}
+      {showEmptyState.value && (
+        <div class="p-4 text-center text-gray-500">
+          No results found for "{searchParams.value}"
+        </div>
+      )}
 
-        {results.value.length > 0 && (
-          <div class="divide-y">
-            {results.value.map((result: any, idx: number) => (
-              <div key={idx} class="p-4 hover:bg-gray-50">
-                <div class="font-semibold">{result.title || result.name}</div>
-                <div class="text-sm text-gray-600 mt-1">{result.preview || result.description}</div>
+      {results.value.length > 0 && (
+        <ul class="list bg-base-100 rounded-box shadow-md">
+          {results.value.map((result: any, idx: number) => (
+            <li key={idx} class="list-row">
+              <div>
+                <div dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.title), searchParams.value) }} />
+                <div dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.body), searchParams.value) }} class="text-xs uppercase font-semibold opacity-60" />
               </div>
-            ))}
-          </div>
-        )}
-      </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
