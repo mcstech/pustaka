@@ -6,7 +6,7 @@ interface ChapterMeta {
 }
 
 async function main() {
-  const base = new URL("file:///Users/mcsdev/Documents/e-bacaan/");
+  const base = new URL("../", import.meta.url);
   const surahsJsonUrl = new URL("./data/quran/surahs.json", base);
   const documentsPathUrl = new URL("./data/documents.json", base);
 
@@ -49,7 +49,8 @@ async function main() {
 
     const ayahNumbers = Object.keys(translationText).sort((a, b) => Number(a) - Number(b));
     for (const ayah of ayahNumbers) {
-      const body = translationText[ayah];
+      // limit body to 255 characters
+      const body = translationText[ayah].slice(0, 255);
       documents.push({
         title,
         category: "quran",

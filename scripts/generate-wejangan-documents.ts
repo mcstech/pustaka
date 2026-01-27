@@ -86,7 +86,7 @@ function stripMarkdown(content: string): string {
 }
 
 async function main() {
-  const base = new URL("file:///Users/mcsdev/Documents/e-bacaan/");
+  const base = new URL("../", import.meta.url);
   const wejanganDir = new URL("./data/wejangan", base).pathname;
   const documentsPathUrl = new URL("./data/documents.json", base);
 
@@ -107,7 +107,8 @@ async function main() {
     
     const title = extractTitleFromMarkdown(content, nameWithoutExt);
     const keywords = extractKeywordsFromMarkdown(content, year, filename);
-    const body = stripMarkdown(content);
+    // limit body to 255 characters
+    const body = stripMarkdown(content).slice(0, 255);
     
     wejanganDocuments.push({
       title,
