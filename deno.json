@@ -8,7 +8,8 @@
     "update": "deno run --env-file -A -r jsr:@fresh/update .",
     "generate-quran": "deno run --allow-read --allow-write scripts/generate-documents.ts",
     "generate-bible": "deno run --allow-net --allow-read --allow-write scripts/generate-bible-documents.ts",
-    "prepare-docs": "deno run generate-quran && deno run generate-bible"
+    "generate-wejangan": "deno run --allow-read --allow-write scripts/generate-wejangan-documents.ts",
+    "prepare-docs": "deno run --allow-read --allow-write --allow-run scripts/prepare-docs.ts"
   },
   "lint": {
     "rules": {
