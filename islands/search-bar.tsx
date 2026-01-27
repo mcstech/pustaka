@@ -3,6 +3,7 @@ import { useSignal } from "@preact/signals";
 import { initSearch } from "@/libs/doc-find.ts";
 import { SearchBarInput } from "./search-bar-input.tsx";
 import { SearchBarResult } from "./search-bar-result.tsx";
+import { cn } from "@/libs/utils.ts";
 // const SearchBarInput = lazy(() => import('./search-bar-input.tsx').then(module => ({ default: module.SearchBarInput })));
 
 export function SearchBar() {
@@ -14,7 +15,7 @@ export function SearchBar() {
   )
 }
 
-export function SearchBarTrigger() {
+export function SearchBarTrigger({ class: className = "" }) {
   const initiated = useSignal(false);
   const handleOpenModal = () => {
     const dialog = document.getElementById("docFind") as HTMLDialogElement | null;
@@ -31,7 +32,7 @@ export function SearchBarTrigger() {
 
   return (
     <div
-      class="input input-sm drop-shadow-md"
+      class={cn("input input-sm drop-shadow-md", className)}
       role="search"
       aria-label="Open search dialog"
       onClick={handleOpenModal}
