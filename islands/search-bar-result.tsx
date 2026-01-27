@@ -1,18 +1,19 @@
 import { useRef } from "preact/compat";
 import { useSignal, useComputed, effect } from "@preact/signals";
 import { escapeHtml, highlightQuery, performSearch } from "@/libs/doc-find.ts";
+import { SearchResult } from "@/types/index.ts";
 
 export function SearchBarResult() {
   const searchParams = useSignal('');
-  const results = useSignal([]);
+  const results = useSignal<SearchResult[]>([]);
   const loading = useSignal(false);
   const error = useSignal<string | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const debounceTimerRef = useRef<number | null>(null);
   const mountedRef = useRef(false);
 
-  // Single effect for URL sync - only runs in browser
   effect(() => {
+    // Single effect for URL sync - only runs in browser
     // Early return for SSR
     if (typeof globalThis === 'undefined' || typeof globalThis.location === 'undefined') {
       return;
@@ -22,6 +23,14 @@ export function SearchBarResult() {
       const params = new URLSearchParams(globalThis.location.search);
       const q = params.get('q') || '';
       console.log('URL search param q=', q);
+      if (!q) {
+        searchParams.value = '';
+        results.value = [];
+        error.value = null;
+        loading.value = false;
+        return;
+      }
+
       searchParams.value = q;
     };
 
@@ -65,6 +74,7 @@ export function SearchBarResult() {
 
   // Separate effect for search - reacts to searchParams changes
   effect(() => {
+    console.log('Effect run');
     // Early return for SSR
     if (typeof globalThis === 'undefined' || typeof globalThis.location === 'undefined') {
       return;
@@ -80,11 +90,15 @@ export function SearchBarResult() {
 
     // Cancel previous request
     if (abortControllerRef.current) {
+      console.log('Aborting previous search request');
       abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+      return;
     }
 
     // Debounce search to avoid excessive requests
     if (debounceTimerRef.current) {
+      console.log('Clearing previous debounce timer');
       clearTimeout(debounceTimerRef.current);
     }
 
@@ -94,6 +108,7 @@ export function SearchBarResult() {
     debounceTimerRef.current = setTimeout(async () => {
       try {
         abortControllerRef.current = new AbortController();
+        console.log(`Searching for "${searchParams.value}"...`);
         const searchResults = await performSearch(searchParams.value);
 
         if (!abortControllerRef.current.signal.aborted) {
@@ -128,6 +143,17 @@ export function SearchBarResult() {
   const showEmptyState = useComputed(() => 
     !loading.value && !error.value && results.value.length === 0 && searchParams.value
   );
+  // Computed search result grouped by category
+  const groupedResults = useComputed(() => {
+    const groups: Record<string, SearchResult[]> = {};
+    results.value.forEach((result) => {
+      if (!groups[result.category]) {
+        groups[result.category] = [];
+      }
+      groups[result.category].push(result);
+    });
+    return groups;
+  });
 
   return (
     <div class="max-h-96 overflow-y-auto">
@@ -149,17 +175,31 @@ export function SearchBarResult() {
         </div>
       )}
 
-      {results.value.length > 0 && (
-        <ul class="list bg-base-100 rounded-box shadow-md">
-          {results.value.map((result: any, idx: number) => (
-            <li key={idx} class="list-row">
-              <div>
-                <div dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.title), searchParams.value) }} />
-                <div dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.body), searchParams.value) }} class="text-xs uppercase font-semibold opacity-60" />
+      {groupedResults.value && (
+        <nav aria-label="Search Results" class="h-full overflow-y-auto">
+          {Object.entries(groupedResults.value).map(([category, items]) => (
+            <div class="relative" key={category}>
+              <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+                <h3 class="relative">{category}</h3>
               </div>
-            </li>
+              <ul role="list" class="divide-y divide-gray-100">
+                {items.map((result, idx: number) => (
+                  <li key={idx} class="flex gap-x-4 px-3 py-5 hover:bg-secondary">
+                    <a href={result.href}>
+                      <div class="flex-auto">
+                        <div class="flex items-baseline justify-between gap-x-4">
+                          <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.title), searchParams.value) }} class="text-sm/6 font-semibold text-gray-900" />
+                          {result.keywords?.length && <p class="flex-none text-xs text-gray-600">{result.keywords.join(', ')}</p>}
+                        </div>
+                        <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.body), searchParams.value) }} class="mt-1 line-clamp-2 text-sm/6 text-gray-600" />
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </nav>
       )}
     </div>
   )
