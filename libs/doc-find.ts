@@ -1,4 +1,5 @@
 import search, { init } from "@/output/docfind.js";
+import { SearchResult } from "@/types/index.ts";
 
 export async function initSearch() {
   const searchStart = performance.now();
@@ -34,7 +35,7 @@ export async function performSearch (query: string) {
   const searchStart = performance.now();
 
   try {
-    const results = await search(query, 100);
+    const results: SearchResult[] = await search(query);
     const searchTime = (performance.now() - searchStart).toFixed(2);
 
     console.log(`Search for "${query}" returned ${results.length} results in ${searchTime} ms.`);
