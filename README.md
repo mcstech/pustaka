@@ -33,9 +33,13 @@ cd e-bacaan
 Before running the application, you need to generate the searchable document index. The project includes several scripts to prepare data from different sources:
 
 ```bash
-docfind "./data/documents.json" output/
 # Generate all documents at once (recommended)
 deno task prepare-docs
+```
+Then run this to produce the wasm file
+
+```
+docfind "./data/documents.json" output/
 ```
 
 This will:
