@@ -11,16 +11,21 @@ export const handler = define.handlers({
   GET(ctx) {
     const url = new URL(ctx.req.url);
     let option = url.searchParams.get("option") || "";
-
     if (!option) {
       option = "quran";
-      ctx.state.title = "Pustaka Bacaan Al-Quran dan Alkitab Digital";
-      ctx.state.description =
-        "Baca Al-Quran dan Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.";
+      ctx.state.meta = {
+        ...ctx.state.meta,
+        title: "Pustaka Bacaan Al-Quran dan Alkitab Digital",
+        description:
+          "Baca Al-Quran dan Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.",
+      };
     } else if (option === "alkitab") {
-      ctx.state.title = "Pustaka Bacaan Alkitab Digital";
-      ctx.state.description =
-        "Baca Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.";
+      ctx.state.meta = {
+        ...ctx.state.meta,
+        title: "Pustaka Bacaan Alkitab Digital",
+        description:
+          "Baca Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.",
+      };
     }
     
     // ctx.state.ogImage = new URL(asset("/og-image.webp"), ctx.url).href;
