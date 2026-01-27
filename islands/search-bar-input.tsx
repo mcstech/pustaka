@@ -1,29 +1,50 @@
-import { useEffect, useRef } from "preact/compat";
-import { useSignal } from "@preact/signals";
+import { useSignal, effect } from "@preact/signals";
+import { useRef } from "preact/hooks";
 
 export function SearchBarInput() {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const searchParams = useSignal('');
+  const inputValue = useSignal('');
+  const debounceTimerRef = useRef<number | null>(null);
   
-  useEffect(() => {
-    const inputElement = inputRef.current;
-    if (!inputElement) return;
-
-    const handleInput = (event: Event) => {
-      const target = event.target as HTMLInputElement;
-      const value = target.value;
-
-      searchParams.value = new URLSearchParams({ q: value }).toString();
-      const newUrl = `${globalThis.location.pathname}?${searchParams.value}`;
-      globalThis.history.replaceState({}, "", newUrl);
-    };
-
-    inputElement.addEventListener("input", handleInput);
-
+  // Debounced URL update - runs only after user stops typing
+  effect(() => {
+    const value = inputValue.value;
+    
+    // Clear existing timer
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+    
+    // Debounce URL update by 300ms
+    debounceTimerRef.current = setTimeout(() => {
+      // Only run in browser environment
+      if (typeof globalThis.location === 'undefined' || typeof globalThis.history === 'undefined') {
+        return;
+      }
+      
+      if (value) {
+        const searchParams = new URLSearchParams({ q: value }).toString();
+        const newUrl = `${globalThis.location.pathname}?${searchParams}`;
+        globalThis.history.replaceState({}, "", newUrl);
+      } else {
+        // Clear URL params when input is empty
+        globalThis.history.replaceState({}, "", globalThis.location.pathname);
+      }
+      
+      // Dispatch custom event to notify other components of URL change
+      globalThis.dispatchEvent(new CustomEvent('urlchange'));
+    }, 300);
+    
     return () => {
-      inputElement.removeEventListener("input", handleInput);
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
     };
-  }, []);
+  });
+
+  const handleInput = (event: Event) => {
+    const target = event.target as HTMLInputElement;
+    inputValue.value = target.value;
+  };
 
   return (
     <div class="flex items-center gap-3 border-b border-base-300 px-4 py-3">
@@ -44,7 +65,8 @@ export function SearchBarInput() {
           <input
             type="search"
             id="search-input"
-            ref={inputRef}
+            value={inputValue.value}
+            onInput={handleInput}
             class="grow"
             placeholder="Cari ayat, surah, atau kata kunci"
             autocomplete="off"
