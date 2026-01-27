@@ -29,24 +29,41 @@
   prefersdark: false;
   color-scheme: light;
 
-  --color-primary: #e87d3e;
-  --color-primary-content: #ffffff;
-  --color-secondary: #f5f3f0;
-  --color-secondary-content: #3d3d3d;
-  --color-accent: #ff6b35;
-  --color-accent-content: #ffffff;
-  --color-neutral: #3d3d3d;
-  --color-neutral-content: #faf9f7;
-  --color-base-100: #faf9f7;
-  --color-base-200: #f5f3f0;
-  --color-base-300: #e8e6e3;
-  --color-base-content: #3d3d3d;
-  --color-info: #3b82f6;
-  --color-info-content: #ffffff;
-  --color-success: #22c55e;
-  --color-success-content: #ffffff;
-  --color-warning: #f59e0b;
-  --color-warning-content: #ffffff;
-  --color-error: #ef4444;
-  --color-error-content: #ffffff;
+  /* Primary - warm terracotta/orange from Claude Console */
+  --color-primary: oklch(0.65 0.15 45);
+  --color-primary-content: oklch(1 0 0);
+  
+  /* Secondary - light warm cream */
+  --color-secondary: oklch(0.96 0.01 80);
+  --color-secondary-content: oklch(0.25 0.02 60);
+  
+  /* Accent - slightly brighter terracotta */
+  --color-accent: oklch(0.62 0.18 40);
+  --color-accent-content: oklch(1 0 0);
+  
+  /* Neutral - dark charcoal text */
+  --color-neutral: oklch(0.25 0.02 60);
+  --color-neutral-content: oklch(0.98 0.01 90);
+  
+  /* Base colors - warm cream/beige background like Claude Console */
+  --color-base-100: oklch(0.98 0.01 90);
+  --color-base-200: oklch(0.96 0.015 85);
+  --color-base-300: oklch(0.93 0.02 80);
+  --color-base-content: oklch(0.25 0.02 60);
+  
+  /* Info - soft blue */
+  --color-info: oklch(0.62 0.19 250);
+  --color-info-content: oklch(1 0 0);
+  
+  /* Success - soft green */
+  --color-success: oklch(0.65 0.2 145);
+  --color-success-content: oklch(1 0 0);
+  
+  /* Warning - warm amber */
+  --color-warning: oklch(0.75 0.18 75);
+  --color-warning-content: oklch(0.2 0.02 60);
+  
+  /* Error - soft red/pink matching Claude Console alert */
+  --color-error: oklch(0.65 0.2 25);
+  --color-error-content: oklch(1 0 0);
 }
