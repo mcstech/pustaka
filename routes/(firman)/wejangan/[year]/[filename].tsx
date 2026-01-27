@@ -18,10 +18,7 @@ export default define.page<typeof handler>(function Page(ctx) {
 export const handler = define.handlers({
   async GET(ctx) {
     const { year, filename } = ctx.params;
-    const base = new URL("../../../../", import.meta.url);
-    console.log('Base URL:', base.href);
-    const path = new URL(`./data/wejangan/${year}/${filename}.md`, base);
-    console.log('Resolved Path:', path.href);
+    const path = `./data/wejangan/${year}/${filename}.md`;
     const markdown = await Deno.readTextFile(path);
     const { body, attrs } = extract<{ title: string; description: string }>(
       markdown,
