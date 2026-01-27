@@ -1,4 +1,4 @@
-import search, { init } from "@/output/docfind.js";
+import search, { init } from "@/islands/docfind/docfind.js";
 import { SearchResult } from "@/types/index.ts";
 
 export async function initSearch() {
