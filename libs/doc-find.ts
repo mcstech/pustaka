@@ -38,8 +38,15 @@ export async function performSearch (query: string) {
     const searchTime = (performance.now() - searchStart).toFixed(2);
 
     console.log(`Search for "${query}" returned ${results.length} results in ${searchTime} ms.`);
+    console.log(results);
     return results;
   } catch (error) {
     console.error('Search error:', error);
   }
 };
+
+export function escapeHtml(text: string) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
