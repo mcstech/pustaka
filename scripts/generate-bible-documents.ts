@@ -100,10 +100,10 @@ async function main() {
 
       for (const verse of verses) {
         documents.push({
-          title: book.commonName,
+          title: `${verse.text.slice(0, 100)} ${book.commonName} ${chapterNum}:${verse.number}`,
           category: "bible",
           href: `/alkitab/${book.id}/${chapterNum}/${verse.number}`,
-          body: verse.text,
+          body: `${verse.text.slice(100)}`,
         });
       }
 

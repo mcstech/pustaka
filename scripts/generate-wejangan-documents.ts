@@ -111,10 +111,10 @@ async function main() {
     const body = stripMarkdown(content).slice(0, 255);
     
     wejanganDocuments.push({
-      title,
+      title: `${body.slice(0, 255)} - ${title}`,
       category: "wejangan",
       href: `/wejangan/${year}/${nameWithoutExt}`,
-      body,
+      body: `${body.slice(255)}`,
       keywords,
     });
   }
