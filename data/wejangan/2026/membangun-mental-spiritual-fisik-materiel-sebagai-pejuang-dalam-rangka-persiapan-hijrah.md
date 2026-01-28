@@ -6,31 +6,31 @@ description: 'Mungkin saudara ada yang bertanya, mengapa kita harus menyusun bar
 ---
 ## KONSEKUENSI PERSAKSIAN ADALAH MENAATI PERINTAH TUAN SEMESTA ALAM DAN MESIAS-NYA
 
-<pre dir=rtl>
+<blockquote>
 اِنَّ اللّٰهَ يُحِبُّ الَّذِيْنَ يُقَاتِلُوْنَ فِيْ سَبِيْلِهٖ صَفًّا كَاَنَّهُمْ بُنْيَانٌ مَّرْصُوْصٌ
-</pre>
+</blockquote>
 
-> Sesungguhnya Allah mencintai orang-orang yang berperang di Jalan-Nya. Mereka tersusun (dalam struktur) bagaikan suatu bangunan yang kukuh. ([QS. Ash-Shäff [61]: 4](https://pustaka.mcstech.dev/61/4))
+> Sesungguhnya Allah mencintai orang-orang yang berperang di Jalan-Nya. Mereka tersusun (dalam struktur) bagaikan suatu bangunan yang kukuh. ([QS. Ash-Shäff [61]: 4](https://pustaka.mcstech.dev/quran/61/4))
 
 Prinsip dan disiplin manajemen kerasulan inilah yang kebanyakan manusia tidak sanggup untuk menggenapinya, yaitu membentuk *Jundullah*. Mungkin saudara ada yang bertanya, mengapa kita harus menyusun barisan (struktur)? Mengapa tidak memakai cara damai saja atau melalui seminar-seminar di kampus? Aku katakan, demikianlah *manhaj* (garis perjuangan) dan sunnah Rasul-Nya. Tidak ada Rasul Allah yang berkolaborasi dengan orang-orang musyrik dalam menegakkan Khilafah atau Kerajaan Allah.
 Maksud dan tujuan pembinaan yang hari ini kita lakukan ialah dalam rangka membentuk satunya ummat, ummatan wasathan, agar tidak ada lagi yang berpikir firqah. Keberadaan komunitas Millah Abraham tidaklah dalam konteks membuat firqah—faksi atau aliran keagamaan baru. Perbedaannya jelas, komunitas Millah Abraham tidak duduk bersama dengan aliran-aliran keagamaan yang hari ini tunduk di bawah naungan orde penguasa.
 
-<pre>
+<blockquote>
 وَقَدْ نَزَّلَ عَلَيْكُمْ فِى الْكِتٰبِ اَنْ اِذَا سَمِعْتُمْ اٰيٰتِ اللّٰهِ يُكْفَرُ بِهَا وَيُسْتَهْزَاُ بِهَا فَلَا تَقْعُدُوْا مَعَهُمْ حَتّٰى يَخُوْضُوْا فِيْ حَدِيْثٍ غَيْرِهٖٓ ۖ اِنَّكُمْ اِذًا مِّثْلُهُمْ ۗ اِنَّ اللّٰهَ جَامِعُ الْمُنٰفِقِيْنَ وَالْكٰفِرِيْنَ فِيْ جَهَنَّمَ جَمِيْعًاۙ
-</pre>
+</blockquote>
 
-> Dan sungguh (Allah) telah menurunkan (ketentuan) bagi kalian dalam Al-Kitab bahwa apabila kalian mendengar ayat-ayat Allah diingkari dan diperolok-olokkan, janganlah kalian duduk bersama mereka hingga mereka memasuki pembicaraan yang lain. (Jika demikian) sesungguhnya kalian tentulah sama seperti mereka. Sesungguhnya Allah akan mengumpulkan semua orang munafik dan orang kafir di Jahannam seluruhnya. ([QS. An-Nisã' [4]: 140](https://pustaka.mcstech.dev/4/140))
+> Dan sungguh (Allah) telah menurunkan (ketentuan) bagi kalian dalam Al-Kitab bahwa apabila kalian mendengar ayat-ayat Allah diingkari dan diperolok-olokkan, janganlah kalian duduk bersama mereka hingga mereka memasuki pembicaraan yang lain. (Jika demikian) sesungguhnya kalian tentulah sama seperti mereka. Sesungguhnya Allah akan mengumpulkan semua orang munafik dan orang kafir di Jahannam seluruhnya. ([QS. An-Nisã' [4]: 140](https://pustaka.mcstech.dev/quran/4/140))
 
 Seandainya kita duduk bersama mereka, niscaya kita pun bagian dari mereka. Tetapi tidak, komunitas Millah Abraham bukanlah bentuk lain dari perpecahan (firqah) anak-anak Abraham. Komunitas Millah Abraham merupakan komunitas tauhid yang berjuang untuk menjadi muslim *hanif* dan *kãffah*.
 
 Meskipun sangat berisiko dimusuhi oleh mayoritas manusia, kita tetap memilih jalan yang mendaki lagi sukar (*fakku raqabah*). Duduk bersama mereka bukanlah pilihan dan tidak ada sunnah Rasul-Nya. Komunitas-komunitas di luar komunitas Millah Abraham adalah *musyrik*. Hari ini tidak ada komunitas agamais Islam yang benar-benar secara kăffah memperjuangkan terwujudnya kehidupan rahmatan lil 'älamin. Yang ada hari ini adalah orang-orang yang merasa dirinya beriman, tetapi dia tidak mengetahui konsep jalan kebenaran sejati (*shirāthal mustaqim*). Tanda-tanda masyarakat jahiliyah yang tidak mengetahui jalan kebenaran, yaitu ketika datang misi Rasul Allah pasti mereka tolak tanpa meneliti lebih lanjut apa misi yang dibawa olehnya.
 
-Orang-orang *Ashhābal Kahfi* yang menyembunyikan keimanannya (*yaktumu imanahu*), merekalah, "*....Innahum fityatun ămanü bi Rabbihim wa zidnähum hudan*-Sesungguhnya mereka adalah pemuda-pemuda yang beriman kepada Rabb mereka dan Kami tambah pula untuk mereka petunjuk" ([QS. Al-Kahfi [18] ayat 13](https://pustaka.mcstech.dev/18/13)), akan menerima misi risalah yang dibawa oleh Rasul Allah. Mereka itulah yang dinamakan Ashhäbal Kahfi yang benar. Abu Bakar, Umar, dan Utsman pun berasal dari golongan Ashhäbal Kahfi, golongan orang-orang yang paling awal mengimani kerasulan Muhammad sebagai sebuah bukti konkret iman kepada Allah. Orang yang mengaku beriman kepada Allah, tetapi menolak kedatangan Rasul-Nya pada zaman ini berarti bukan orang yang sebenar-benarnya beriman. Iman itu merupakan pengejawantahan dari [Al-
-Quran Surat An-Nisã' [4] ayat 80](https://pustaka.mcstech.dev/4/80):
+Orang-orang *Ashhābal Kahfi* yang menyembunyikan keimanannya (*yaktumu imanahu*), merekalah, "*....Innahum fityatun ămanü bi Rabbihim wa zidnähum hudan*-Sesungguhnya mereka adalah pemuda-pemuda yang beriman kepada Rabb mereka dan Kami tambah pula untuk mereka petunjuk" ([QS. Al-Kahfi [18] ayat 13](https://pustaka.mcstech.dev/quran/18/13)), akan menerima misi risalah yang dibawa oleh Rasul Allah. Mereka itulah yang dinamakan Ashhäbal Kahfi yang benar. Abu Bakar, Umar, dan Utsman pun berasal dari golongan Ashhäbal Kahfi, golongan orang-orang yang paling awal mengimani kerasulan Muhammad sebagai sebuah bukti konkret iman kepada Allah. Orang yang mengaku beriman kepada Allah, tetapi menolak kedatangan Rasul-Nya pada zaman ini berarti bukan orang yang sebenar-benarnya beriman. Iman itu merupakan pengejawantahan dari [Al-
+Quran Surat An-Nisã' [4] ayat 80](https://pustaka.mcstech.dev/quran/4/80):
 
-<pre>
+<blockquote>
 مَنْ يُّطِعِ الرَّسُوْلَ فَقَدْ اَطَاعَ اللّٰهَ ۚ وَمَنْ تَوَلّٰى فَمَآ اَرْسَلْنٰكَ عَلَيْهِمْ حَفِيْظًا
-</pre>
+</blockquote>
 
 > Siapa saja yang menaati Rasul (Nya), maka sungguh telah menaati Allah. Dan siapa saja yang berpaling, maka Kami tidak mengutus engkau (Rasul Allah) sebagai pemelihara mereka.
 
@@ -59,10 +59,35 @@ Tentu saja, orang-orang yang ikut di dalam shalat itu adalah orang-orang yang su
 Syirik adalah bentuk najis yang paling dibenci oleh Tuan Semesta Alam
 rahasia kehidupan di jalan kebenaran yang hari ini Tuan Semesta Alam percayakan kepada kita untuk mengawal misi ini. Orang tidak mungkin bisa shalat tanpa ber-*thahārah* atau menyucikan diri dari kenajisan yang bersifat ruhani atau batin. Musyrik itulah yang dikatakan sebagai najis. Selama orang tidak mengenal musyrik maka orang itu tidak akan pernah bisa keluar dari kemusyrikan. Orang yang tidak akan bisa membebaskan dirinya dari kemusyrikan maka Tuan Semesta Alam tidak bisa menerima pengabdian hamba-Nya itu. Tuan Semesta Alam tidak akan ridha menjadikan kita sebagai hamba-Nya kalau kita belum meninggalkan tuan-tuan yang lama. Ini adalah prinsip yang utama.
 
-Bentuk dari tuan-tuan yang lama ini sangat banyak. Tuan yang pertama adalah diri sendiri. Kita bertuan atau ber-*ilah* kepada *hawa nafsu*. Kita ditipu oleh angan-angan yang menipu. Hawa nafsu bisa menjadi kendala bagi manusia untuk beriman kepada Tuan Semesta Alam. Barang siapa yang tidak sadar bahwa di dalam dirinya ada kekuatan negatif yang menarik dirinya ke bawah, maka dirinya tidak bisa naik ke atas (*mi'rāj*). Kita mau terbang ke atas tetapi ia (hawa nafsu) menarik ke bawah. Tuan Semesta Alam berfirman tentang hal ini di dalam [Al-Quran Surat Al-A'räf [7] ayat 176](https://pustaka.mcstech.dev/7/176):
+Bentuk dari tuan-tuan yang lama ini sangat banyak. Tuan yang pertama adalah diri sendiri. Kita bertuan atau ber-*ilah* kepada *hawa nafsu*. Kita ditipu oleh angan-angan yang menipu. Hawa nafsu bisa menjadi kendala bagi manusia untuk beriman kepada Tuan Semesta Alam. Barang siapa yang tidak sadar bahwa di dalam dirinya ada kekuatan negatif yang menarik dirinya ke bawah, maka dirinya tidak bisa naik ke atas (*mi'rāj*). Kita mau terbang ke atas tetapi ia (hawa nafsu) menarik ke bawah. Tuan Semesta Alam berfirman tentang hal ini di dalam [Al-Quran Surat Al-A'räf [7] ayat 176](https://pustaka.mcstech.dev/quran/7/176):
 
-<pre>
+<blockquote>
 وَلَوْ شِئْنَا لَرَفَعْنٰهُ بِهَا وَلٰكِنَّهٗٓ اَخْلَدَ اِلَى الْاَرْضِ وَاتَّبَعَ هَوٰىهُۚ فَمَثَلُهٗ كَمَثَلِ الْكَلْبِۚ اِنْ تَحْمِلْ عَلَيْهِ يَلْهَثْ اَوْ تَتْرُكْهُ يَلْهَثْۗ ذٰلِكَ مَثَلُ الْقَوْمِ الَّذِيْنَ كَذَّبُوْا بِاٰيٰتِنَاۚ فَاقْصُصِ الْقَصَصَ لَعَلَّهُمْ يَتَفَكَّرُوْنَ
-</pre>
+</blockquote>
 
-Dan seandainya Kami menghendaki, niscaya Kami tinggikannya dengan (ayat-ayat) itu, tetapi dia cenderung pada dunia dan mengikuti hawa nafsunya. Maka, perumpamaannya seperti anjing, "jika kamu menghalaunya, ia menjulurkan lidahnya, dan jika kamu membiarkannya, dia menjulurkan lidahnya (juga)." Demikian itu adalah perumpamaan kaum yang mendustakan ayat-ayat Kami. Maka, ceritakanlah kisah-kisah itu agar mereka berpikir.
+> Dan seandainya Kami menghendaki, niscaya Kami tinggikannya dengan (ayat-ayat) itu, tetapi dia cenderung pada dunia dan mengikuti hawa nafsunya. Maka, perumpamaannya seperti anjing, "jika kamu menghalaunya, ia menjulurkan lidahnya, dan jika kamu membiarkannya, dia menjulurkan lidahnya (juga)." Demikian itu adalah perumpamaan kaum yang mendustakan ayat-ayat Kami. Maka, ceritakanlah kisah-kisah itu agar mereka berpikir.
+
+Manusia selalu menempel dan melekat di bumi tidak bisa lepas dari tarikan gravitasi bumi yang bersifat rendah. Tuan Semesta Alam akan mengangkat kita, tetapi kalau kita mengikuti hawa nafsu, maka kita akan turun ke bawah. Nafsu amarah di dalam diri manusia itulah kekuatan yang sangat dominan menguasai diri manusia. Hari ini adalah hasil ujian kemarin. Orang-orang yang tidak sanggup melawan tarikan hawa nafsunya berakibat seperti hari ini, yakni tidak konsisten untuk melanjutkan tugasnya, hanya karena mereka memikirkan masalah kepuasan yang menipu, sebagaimana dinyatakan dalam [Al-Quran Surat Al-Hadid [57] ayat 20](https://pustaka.mcstech.dev/quran/57/20):
+
+<blockquote>
+اِعْلَمُوْٓا اَنَّمَا الْحَيٰوةُ الدُّنْيَا لَعِبٌ وَّلَهْوٌ وَّزِيْنَةٌ وَّتَفَاخُرٌۢ بَيْنَكُمْ وَتَكَاثُرٌ فِى الْاَمْوَالِ وَالْاَوْلَادِۗ كَمَثَلِ غَيْثٍ اَعْجَبَ الْكُفَّارَ نَبَاتُهٗ ثُمَّ يَهِيْجُ فَتَرٰىهُ مُصْفَرًّا ثُمَّ يَكُوْنُ حُطَامًاۗ وَفِى الْاٰخِرَةِ عَذَابٌ شَدِيْدٌۙ وَّمَغْفِرَةٌ مِّنَ اللّٰهِ وَرِضْوَانٌ ۗوَمَا الْحَيٰوةُ الدُّنْيَآ اِلَّا مَتَاعُ الْغُرُوْرِ</blockquote>
+
+> Ketahuilah bahwa kehidupan dunia itu hanyalah permainan, kelengahan, perhiasan, dan saling bermegah-megahan di antara kalian, serta berlomba-lomba dalam banyaknya harta dan anak keturunan. (Perumpamaannya adalah) seperti hujan yang tanamannya mengagumkan para petani, lalu mengering dan kamu lihat menguning, kemudian hancur. Dan di akhirat ada azab yang keras, serta ampunan dari Allah dan keridhaan-Nya. Dan kehidupan dunia (bagi orang-orang yang lengah) hanyalah kesenangan yang menipu.
+
+Kesenangan dunia adalah kesenangan yang bersifat menipu. Inilah bel
+yang pertama dan ada pada diri kita, atau dalam bahasa simbol disebut setan. Setan yang ada di dalam diri manusia harus bisa ditundukkan dengan kekuatan ruh yang datang dari Tuan Semesta Alam, *Ruhul Qudus*. Dengan kata lain, tantangan yang sangat besar adalah diri kita sendiri. Kita bisa meninggalkan setan dalam bentuk manusia dan bisa tidak taat kepada manusia yang menempatkan dirinya sebagai tandingan Tuan Semesta Alam yang mengatur kita, akan tetapi yang paling sulit adalah meninggalkan hawa nafsu diri sendiri. Nafsu ini selalu mengajak manusia kepada jalan yang buruk.
+
+<blockquote>
+۞ وَمَآ اُبَرِّئُ نَفْسِيْۚ اِنَّ النَّفْسَ لَاَمَّارَةٌ ۢ بِالسُّوْۤءِ اِلَّا مَا رَحِمَ رَبِّيْۗ اِنَّ رَبِّيْ غَفُوْرٌ رَّحِيْمٌ</blockquote>
+
+> Dan aku tidak (menyatakan) diriku bebas (dari kesalahan) karena sesungguhnya nafsu itu selalu mendorong kepada kejahatan, kecuali (nafsu) yang diberi rahmat oleh Tuanku. Sesungguhnya Tuanku Maha Pengampun, Maha Penyayang." 
+([QS. Yüsuf [12]: 53](https://pustaka.mcstech.dev/quran/12/53))
+
+Inilah kategori musyrik yang paling berbahaya dan berada dalam diri kita yang kurang disadari. Oleh sebab itu, cara untuk mengusir setan dari dalam diri kita adalah selalu *dzikir* atau ingat kepada Tuan Semesta Alam, bahwa kita adalah orang-orang yang sudah menjual diri (*anfüs*) dan segala apa yang kita miliki (termasuk *amwãl*) kepada Dia. Ingat, di dalam Firman Allah ada di antara manusia yang sudah menjual dirinya hanya untuk mencari keridhaan Allah.
+
+<blockquote>وَمِنَ النَّاسِ مَنْ يَّشْرِيْ نَفْسَهُ ابْتِغَاۤءَ مَرْضَاتِ اللّٰهِ ۗوَاللّٰهُ رَءُوْفٌۢ بِالْعِبَادِ</blockquote>
+
+> Dan di antara manusia ada orang yang menjual dirinya untuk mencari ridha Allah. Allah Maha Penyantun kepada hamba-hamba-Nya. 
+([QS. Al-Baqarah [2]: 207](https://pustaka.mcstech.dev/quran/2/207))
+
+Kesenangan dunia adalah kesenangan yang bersifat menipu. Inilah bentuk dari ilah yang pertama dan ada pada diri kita, atau dalam bahasa simbol disebut setan. Setan yang ada di dalam diri manusia harus bisa ditundukkan dengan kekuatan ruh yang datang dari Tuan Semesta Alam, Ruhul Qudus. Dengan kata lain, tantangan yang sangat besar adalah diri kita sendiri. Kita bisa meninggalkan setan dalam bentuk manusia dan bisa tidak taat kepada manusia yang menempatkan dirinya sebagai tandingan Tuan Semesta Alam yang mengatur kita, akan tetapi yang paling sulit adalah meninggalkan hawa nafsu diri sendiri. Nafsu ini selalu mengajak manusia kepada jalan yang buruk.
