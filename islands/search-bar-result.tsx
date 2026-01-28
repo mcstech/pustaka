@@ -147,60 +147,67 @@ export function SearchBarResult() {
   const groupedResults = useComputed(() => {
     const groups: Record<string, SearchResult[]> = {};
     results.value.forEach((result) => {
-      if (!groups[result.category]) {
-        groups[result.category] = [];
+      const category = result.category;
+      const categoryName = category === 'wejangan' ? 'Wejangan'
+                        : category === 'bible' ? 'Al-Kitab'
+                        : category === 'quran' ? 'Al-Qur\'an'
+                        : 'Lain-lain';
+      if (!groups[categoryName]) {
+        groups[categoryName] = [];
       }
-      groups[result.category].push(result);
+      groups[categoryName].push(result);
     });
     return groups;
   });
 
+  if (loading.value) {
+    return (
+      <div class="p-4 text-center text-gray-500">
+        Sedang mencari...
+      </div>
+    );
+  }
+
+  if (error.value) {
+    return (
+      <div class="p-4 bg-red-100 text-red-700 rounded">
+        {error.value}
+      </div>
+    );
+  }
+
+  if (showEmptyState.value && !groupedResults.value) {
+    return (
+      <div class="p-4 text-center text-gray-500">
+        No results found for "{searchParams.value}"
+      </div>
+    )
+  }
+  
   return (
-    <div class="max-h-96 overflow-y-auto">
-      {loading.value && (
-        <div class="p-4 text-center text-gray-500">
-          Searching...
+    <nav aria-label="Search Results" class="h-full max-h-96 overflow-y-auto">
+      {Object.entries(groupedResults.value).map(([category, items]) => (
+        <div class="relative h-auto" key={category}>
+          <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+            <h3 class="relative">{category}</h3>
+          </div>
+          <ul role="list" class="divide-y divide-gray-100">
+            {items.map((result, idx: number) => (
+              <li key={idx} class="flex gap-x-4 px-3 py-5 hover:bg-secondary">
+                <a href={result.href}>
+                  <div class="flex-auto">
+                    <div class="flex items-baseline justify-between gap-x-4">
+                      <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.title), searchParams.value) }} class="text-sm/6 font-semibold text-gray-900" />
+                      {result.keywords?.length && <p class="flex-none text-xs text-gray-600">{result.keywords.join(', ')}</p>}
+                    </div>
+                    <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.body), searchParams.value) }} class="mt-1 line-clamp-2 text-sm/6 text-gray-600" />
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      )}
-
-      {error.value && (
-        <div class="p-4 bg-red-100 text-red-700 rounded">
-          {error.value}
-        </div>
-      )}
-
-      {showEmptyState.value && (
-        <div class="p-4 text-center text-gray-500">
-          No results found for "{searchParams.value}"
-        </div>
-      )}
-
-      {groupedResults.value && (
-        <nav aria-label="Search Results" class="h-full overflow-y-auto">
-          {Object.entries(groupedResults.value).map(([category, items]) => (
-            <div class="relative" key={category}>
-              <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
-                <h3 class="relative">{category}</h3>
-              </div>
-              <ul role="list" class="divide-y divide-gray-100">
-                {items.map((result, idx: number) => (
-                  <li key={idx} class="flex gap-x-4 px-3 py-5 hover:bg-secondary">
-                    <a href={result.href}>
-                      <div class="flex-auto">
-                        <div class="flex items-baseline justify-between gap-x-4">
-                          <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.title), searchParams.value) }} class="text-sm/6 font-semibold text-gray-900" />
-                          {result.keywords?.length && <p class="flex-none text-xs text-gray-600">{result.keywords.join(', ')}</p>}
-                        </div>
-                        <p dangerouslySetInnerHTML={{ __html: highlightQuery(escapeHtml(result.body), searchParams.value) }} class="mt-1 line-clamp-2 text-sm/6 text-gray-600" />
-                      </div>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </nav>
-      )}
-    </div>
+      ))}
+    </nav>
   )
 }
