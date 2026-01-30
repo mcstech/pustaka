@@ -1,10 +1,8 @@
 import { page } from "fresh";
+import { Head, asset } from "fresh/runtime";
 import { define } from "@/utils.ts";
 import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";
-import { QuranChaptersList } from "@/components/quran/chapters.tsx";
-import { AlKitabBooksList } from "../components/bible/books.tsx";
-import { BooksTab } from "../components/BooksTab.tsx";
 import { HeroForm } from "@/components/hero/form.tsx";
 
 export const handler = define.handlers({
@@ -13,39 +11,48 @@ export const handler = define.handlers({
     let option = url.searchParams.get("option") || "";
     if (!option) {
       option = "quran";
-      ctx.state.meta = {
-        ...ctx.state.meta,
-        title: "Pustaka Bacaan Al-Quran dan Alkitab Digital",
-        description:
-          "Baca Al-Quran dan Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.",
-      };
-    } else if (option === "alkitab") {
-      ctx.state.meta = {
-        ...ctx.state.meta,
-        title: "Pustaka Bacaan Alkitab Digital",
-        description:
-          "Baca Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.",
-      };
     }
     
-    // ctx.state.ogImage = new URL(asset("/og-image.webp"), ctx.url).href;
-
     return page({ option });
   },
 });
 
 export default define.page<typeof handler>(function Home(ctx) {
   const option = ctx.data.option;
+  const headTitle = option === "quran"
+    ? "Pustaka Bacaan Al-Quran Digital"
+    : "Pustaka Bacaan Alkitab Digital";
+  const headDescription = option === "quran"
+    ? "Baca Al-Quran dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat."
+    : "Baca Alkitab dalam talian dengan mudah. Akses teks suci, terjemahan, dan sumber berkaitan di satu tempat.";
 
   return (
     <>
+      <Head>
+        <title>{headTitle}</title>
+        <meta property="og:title" content={headTitle} />
+        <meta name="description" content={headDescription} />
+        <meta property="og:description" content={headDescription} />
+        <meta property="og:image" content="/og-image.webp" />
+        <link
+          rel="preload"
+          href={asset("/fonts/quran/lpmq.woff")}
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href={asset("/fonts/quran/surah-names/v1/surah-names.woff2")}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <AtasNamaTuanSemestaAlam />
       <Hero>
-        <BooksTab option={option} />
         <HeroForm />
       </Hero>
-      {option === "quran" && <QuranChaptersList chapters={ctx.state.quran.chapters} />}
-      {option === "alkitab" && <AlKitabBooksList kitab={ctx.state.alkitab} />}
     </>
   );
 });
