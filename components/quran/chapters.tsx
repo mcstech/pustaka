@@ -9,7 +9,7 @@ export function QuranChaptersList({ chapters }: QuranChaptersListProps) {
     <div class="py-20 sm:py-10">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 class="text-center text-lg/8 font-semibold text-gray-900">Nama-nama Surah</h2>
-        <div class="mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-3 items-center gap-x-8 gap-y-3 sm:gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none">
+        <div class="mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-3 items-center gap-x-8 gap-y-3 sm:gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none [&_div.wrapper]:bg-base-200 [&_div.wrapper]:border [&_div.wrapper]:rounded-selector [&_div.wrapper]:w-full [&_div.wrapper]:hover:shadow-lg [&_div.wrapper]:transition-all">
           {chapters.map((chapter) => (
             <QuranChapterItem key={chapter.id} chapter={chapter} />
           ))}
@@ -22,7 +22,7 @@ export function QuranChaptersList({ chapters }: QuranChaptersListProps) {
 export function QuranChapterItem({ chapter }: { chapter: Surah }) {
   const href = chapter.id === 1 ? '/quran' : `/quran/${chapter.id.toString()}`;
   return (
-    <div class="bg-base-200 border rounded-selector w-full hover:shadow-lg transition-all">
+    <div class="wrapper">
       <a class="group no-underline" href={href}>
         <div class="flex justify-between items-center py-4 px-5 hover:bg-accent/50 transition-colors duration-200">
           <div class="flex items-center">

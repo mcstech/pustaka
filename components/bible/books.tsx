@@ -8,7 +8,7 @@ export function AlKitabBooksList({ kitab }: AlKitabListProps) {
     <div class="py-20 sm:py-10">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 class="text-center text-lg/8 font-semibold text-primary">{kitab.translation.name}</h2>
-        <div class="mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none">
+        <div class="mx-auto grid max-w-lg grid-cols-1 sm:grid-cols-3 items-center gap-x-8 gap-y-12 sm:max-w-xl lg:mx-0 lg:max-w-none [&_div.wrapper]:bg-base-200 [&_div.wrapper]:border [&_div.wrapper]:rounded-selector [&_div.wrapper]:w-full [&_div.wrapper]:hover:shadow-lg [&_div.wrapper]:transition-all">
           {kitab.books.map((book) => (
             <AlKitabBookItem key={book.id} book={book} />
           ))}
@@ -21,7 +21,7 @@ export function AlKitabBooksList({ kitab }: AlKitabListProps) {
 export function AlKitabBookItem({ book }: { book: TranslationBooks['books'][0] }) {
   const href = book.id === 'GEN' ? '/alkitab' : `/alkitab/${book.id}`;
   return (
-    <div class="bg-base-200 border rounded-selector w-full">
+    <div class="wrapper">
       <a class="group no-underline" href={href}>
         <div class="flex justify-between items-center py-4 px-5 hover:bg-accent/50 transition-colors duration-200">
           <div class="flex items-center">
