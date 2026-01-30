@@ -140,4 +140,4 @@ The Quran client is configured in `libs/quran.ts` with Indonesian as the default
 **Testing Search**:
 1. Ensure `data/documents.json` is generated (run `deno task prepare-docs`)
 2. The search modal initializes the search library lazily on first open
-3. Search returns objects with: `title`, `category` (quran/bible), `href`, `body`
+3. Search returns objects with: `title`, `category` (quran/bible/wejangan), `href`, `body`, `keywords`
