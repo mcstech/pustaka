@@ -1,24 +1,28 @@
 import { page } from "fresh";
-import { Head, asset } from "fresh/runtime";
+import { asset, Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
 import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";
-import { HeroForm } from "@/components/hero/form.tsx";
+import { HeroForm, HeroLogo } from "@/components/hero/form.tsx";
+import { HeroVerse } from "@/components/hero/verse.tsx";
+import { getRandomVerse, type RandomVerse } from "@/libs/random-verse.ts";
 
 export const handler = define.handlers({
-  GET(ctx) {
+  async GET(ctx) {
     const url = new URL(ctx.req.url);
     let option = url.searchParams.get("option") || "";
     if (!option) {
       option = "quran";
     }
-    
-    return page({ option });
+
+    const verse: RandomVerse = await getRandomVerse();
+
+    return page({ option, verse });
   },
 });
 
 export default define.page<typeof handler>(function Home(ctx) {
-  const option = ctx.data.option;
+  const { option, verse } = ctx.data;
   const headTitle = option === "quran"
     ? "Pustaka Bacaan Al-Quran Digital"
     : "Pustaka Bacaan Alkitab Digital";
@@ -51,7 +55,9 @@ export default define.page<typeof handler>(function Home(ctx) {
       </Head>
       <AtasNamaTuanSemestaAlam />
       <Hero>
+        <HeroLogo />
         <HeroForm />
+        <HeroVerse verse={verse} />
       </Hero>
     </>
   );
