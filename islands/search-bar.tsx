@@ -1,5 +1,6 @@
 // import { Suspense, lazy } from "preact/compat";
 import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
 import { initSearch } from "@/libs/doc-find.ts";
 import { SearchBarInput } from "./search-bar-input.tsx";
 import { SearchBarResult } from "./search-bar-result.tsx";
@@ -29,6 +30,18 @@ export function SearchBarTrigger({ class: className = "" }) {
       initiated.value = true;
     }
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.metaKey && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        handleOpenModal();
+      }
+    };
+
+    globalThis.addEventListener("keydown", handleKeyDown);
+    return () => globalThis.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <div
