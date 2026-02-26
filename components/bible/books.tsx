@@ -19,7 +19,7 @@ export function AlKitabBooksList({ kitab }: AlKitabListProps) {
 }
 
 export function AlKitabBookItem({ book }: { book: TranslationBooks['books'][0] }) {
-  const href = book.id === 'GEN' ? '/alkitab' : `/alkitab/${book.id}`;
+  const href = `/alkitab/${book.id}`;
   return (
     <div class="wrapper">
       <a class="group no-underline" href={href}>

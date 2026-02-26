@@ -1,7 +1,6 @@
 import { Context } from "fresh";
 import ALQURAN from "@/data/quran/surahs.json" with { type: "json" };
 import BIBLE from "@/data/bible/ind_ayt/books.json" with { type: "json" };
-import GENESIS from "@/data/bible/ind_ayt/gen.json" with { type: "json" };
 import { State } from "@/utils.ts";
 
 async function prepareFirman(ctx: Context<State>) {
@@ -12,19 +11,7 @@ async function prepareFirman(ctx: Context<State>) {
       chapters,
     };
   } else if (url.pathname.startsWith("/alkitab")) {
-    const chapters = BIBLE.books.map((book) => {
-      if (book.id === "GEN") {
-        return {
-          ...book,
-          translationBookChapter: GENESIS
-        }
-      }
-      return book;
-    });
-    ctx.state.alkitab = {
-      ...BIBLE,
-      books: chapters,
-    } as unknown as State["alkitab"];
+    ctx.state.alkitab = BIBLE as unknown as State["alkitab"];
   }
 
   return await ctx.next();
