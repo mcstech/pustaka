@@ -1,5 +1,5 @@
 import { page } from "fresh";
-import { Head, asset } from "fresh/runtime";
+import { asset, Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
 import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";

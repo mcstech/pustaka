@@ -12,7 +12,10 @@ export function Hero(props: HeroProps) {
   return (
     <div class={cn("relative isolate min-h-screen flex flex-col", props.class)}>
       {/* Subtle background decorations */}
-      <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
         <div
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
           class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-primary-foreground to-primary opacity-10 sm:left-[calc(50%-30rem)] sm:w-288.75"
@@ -33,9 +36,13 @@ export function Hero(props: HeroProps) {
 
       {/* Bottom navigation links */}
       <div class="flex justify-center gap-6 pb-8 text-xs text-base-content/40">
-        <a href="/quran" class="hover:text-base-content transition-colors">Al-Quran</a>
+        <a href="/quran" class="hover:text-base-content transition-colors">
+          Al-Quran
+        </a>
         <span aria-hidden="true">·</span>
-        <a href="/alkitab" class="hover:text-base-content transition-colors">Alkitab</a>
+        <a href="/alkitab" class="hover:text-base-content transition-colors">
+          Alkitab
+        </a>
       </div>
 
       <div
@@ -48,5 +55,5 @@ export function Hero(props: HeroProps) {
         />
       </div>
     </div>
-  )
+  );
 }

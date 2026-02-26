@@ -21,9 +21,20 @@ async function getRandomQuranVerse(): Promise<RandomVerse> {
   const surahs = ALQURAN.chapters;
   const surahMeta = surahs[Math.floor(Math.random() * surahs.length)];
 
+  // Validate surah ID is within the expected 1-114 range before dynamic import
+  const surahId = Number(surahMeta.id);
+  if (!Number.isInteger(surahId) || surahId < 1 || surahId > 114) {
+    return {
+      text: "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+      reference: "Al-Fatihah 1:1",
+      category: "quran",
+      href: "/quran/1/1",
+    };
+  }
+
   try {
-    const module = await import(`../data/quran/surah/${surahMeta.id}.ts`);
-    const surahData = module.default[surahMeta.id];
+    const module = await import(`../data/quran/surah/${surahId}.ts`);
+    const surahData = module.default[surahId];
 
     if (!surahData?.translations?.id?.text) {
       throw new Error("No translation found");
@@ -35,9 +46,9 @@ async function getRandomQuranVerse(): Promise<RandomVerse> {
 
     return {
       text,
-      reference: `${surahMeta.name_simple} ${surahMeta.id}:${verseKey}`,
+      reference: `${surahMeta.name_simple} ${surahId}:${verseKey}`,
       category: "quran",
-      href: `/quran/${surahMeta.id}/${verseKey}`,
+      href: `/quran/${surahId}/${verseKey}`,
     };
   } catch {
     return {
@@ -51,8 +62,12 @@ async function getRandomQuranVerse(): Promise<RandomVerse> {
 
 type VerseContentItem = string | { text?: string; poem?: number };
 
+// Returns a random verse from Genesis chapter 1 (the only Bible chapter available locally).
+// Content items may be plain strings or objects with a text property (e.g., poetry lines).
 function getRandomBibleVerse(): RandomVerse {
-  const verses = (GENESIS.chapter.content as Array<{ type: string; number: number; content: VerseContentItem[] }>)
+  const verses = (GENESIS.chapter.content as Array<
+    { type: string; number: number; content: VerseContentItem[] }
+  >)
     .filter((c) => c.type === "verse");
 
   const verse = verses[Math.floor(Math.random() * verses.length)];
