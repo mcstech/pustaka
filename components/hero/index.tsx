@@ -10,7 +10,7 @@ interface HeroProps {
 
 export function Hero(props: HeroProps) {
   return (
-    <div class={cn("relative isolate min-h-screen flex flex-col", props.class)}>
+    <div class={cn("relative isolate flex flex-col overscroll-contain overflow-hidden", props.class)}>
       {/* Subtle background decorations */}
       <div
         aria-hidden="true"
@@ -28,14 +28,14 @@ export function Hero(props: HeroProps) {
       </div>
 
       {/* Centered content */}
-      <div class="flex flex-1 flex-col items-center justify-center px-6 py-24">
+      <div class="flex flex-1 flex-col items-center justify-center px-6 pt-24 pb-8">
         <div class="flex flex-col items-center gap-8 w-full max-w-2xl">
           {props.children}
         </div>
       </div>
 
       {/* Bottom navigation links */}
-      <div class="flex justify-center gap-6 pb-8 text-xs text-base-content/40">
+      <div class="flex justify-center gap-6 text-xs text-base-content/40">
         <a href="/quran" class="hover:text-base-content transition-colors">
           Al-Quran
         </a>
