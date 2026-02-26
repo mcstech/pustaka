@@ -6,5 +6,11 @@ export const randomQuotes: RandomVerse[] = [
     reference: "Renungan Spiritual",
     category: "wejangan",
     href: "",
-  }
+  },
+  {
+    text: "Tugas seorang mu'min sejati adalah membuktikan dan melaksanakan apa yang telah menjadi komitmen dirinya kepada Sang Pencipta, termasuk pengorbanan harta dan dirinya sendiri.",
+    reference: "Renungan Spiritual",
+    category: "wejangan",
+    href: "",
+  },
 ];
