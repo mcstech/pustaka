@@ -5,7 +5,8 @@ import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";
 import { HeroForm, HeroLogo } from "@/components/hero/form.tsx";
 import { HeroVerse } from "@/components/hero/verse.tsx";
-import { getRandomVerse, type RandomVerse } from "@/libs/random-verse.ts";
+import { getRandomVerse } from "@/libs/random-verse.ts";
+import { RandomVerse } from "@/types/index.ts";
 
 export const handler = define.handlers({
   async GET(ctx) {
