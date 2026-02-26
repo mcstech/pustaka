@@ -1,19 +1,19 @@
 import ALQURAN from "@/data/quran/surahs.json" with { type: "json" };
 import GENESIS from "@/data/bible/ind_ayt/gen.json" with { type: "json" };
-
-export interface RandomVerse {
-  text: string;
-  reference: string;
-  category: "quran" | "bible";
-  href: string;
-}
+import { RandomVerse } from "@/types/index.ts";
+import { randomQuotes } from "./wejangan/random-quotes.ts";
 
 export async function getRandomVerse(): Promise<RandomVerse> {
-  const isQuran = Math.random() < 0.5;
+  const randomValue = Math.random();
+  const isQuran = randomValue < 0.5;
+  const isAlkitab = !isQuran && randomValue >= 0.5 && randomValue < 0.75;
   if (isQuran) {
     return await getRandomQuranVerse();
-  } else {
+  } else if (isAlkitab) {
     return getRandomBibleVerse();
+  } else {
+    const randomIndex = Math.floor(Math.random() * randomQuotes.length);
+    return randomQuotes[randomIndex];
   }
 }
 
