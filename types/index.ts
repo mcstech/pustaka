@@ -5,3 +5,10 @@ export interface SearchResult {
   category: string;
   keywords?: string[];
 }
+
+export interface RandomVerse {
+  text: string;
+  reference: string;
+  category: "quran" | "bible" | "wejangan";
+  href: string;
+}
