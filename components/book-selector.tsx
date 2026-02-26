@@ -58,7 +58,7 @@ export function BookToC({ data, selected }: BookToCProps) {
             {data.map((item) => {
               return (
                 <li class="list-row data-selected:bg-base-300 rounded-none" data-selected={item.id === selected}>
-                  <a class="group" href={typeof selected === "number" ? `/quran/${item.id}` : `/kitab/${item.id}`}>
+                  <a class="group" href={typeof selected === "number" ? `/quran/${item.id}` : `/alkitab/${item.id}`}>
                     <div class="text-xs font-bold opacity-30 tabular-nums">{item.id}</div>
                     <div class="list-col-grow">
                       <p class="list-col-wrap">{typeof selected === 'number' ? (item as Surah).name_complex : (item as TranslationBooks["books"][0]).commonName}</p>

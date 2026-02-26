@@ -5,14 +5,12 @@ import { define } from "@/utils.ts";
 export default define.layout((props) => {
   const { Component, state, url } = props;
   const currentURL = new URL(url.href);
-  const currentSurahPath = currentURL.pathname.split("/").pop();
-  const currentSelectedChapter = currentSurahPath && !['quran', 'alkitab'].includes(currentSurahPath)
-    ? parseInt(currentSurahPath, 10)
-    : 1;
-  const currentSelectedBook = currentSurahPath && !['quran', 'alkitab'].includes(currentSurahPath)
-    ? currentSurahPath
-    : 'GEN';
+  const pathParts = currentURL.pathname.split("/").filter(Boolean);
+  // For quran: /quran/[chapterId]/... → pathParts[1] is the chapterId
+  // For alkitab: /alkitab/[bookId]/... → pathParts[1] is the bookId
   const isQuran = currentURL.pathname.startsWith("/quran") || currentURL.pathname.startsWith("/wejangan");
+  const currentSelectedChapter = pathParts[1] ? parseInt(pathParts[1], 10) || 1 : 1;
+  const currentSelectedBook = pathParts[1] ? pathParts[1].toUpperCase() : "GEN";
   const kitab = isQuran ? state.quran : state.alkitab;
   const listTitles = kitab && 'chapters' in kitab ? kitab.chapters : kitab.books;
   const selected = isQuran ? currentSelectedChapter : currentSelectedBook;
