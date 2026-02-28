@@ -13,4 +13,10 @@ export const randomQuotes: RandomVerse[] = [
     category: "wejangan",
     href: "",
   },
+  {
+    text: "Pemahaman seseorang dalam mempelajari makna yang sesungguhnya dari setiap ayat Al-Quran sangat tergantung dari visi dasarnya tentang fungsi Kitab itu. Jika Al-Quran dianggap sebagai sumber pahala hanya dengan membacanya, atau dikatakan hanya membahas alam ghaib dan alam sesudah mati, niscaya seluruh tafsirnya menjadi tidak membumi dan sarat khayalan. Sungguh tidak masuk akal apabila dikatakan, hanya dengan membunyikan huruf-huruf dalam Al-Quran seseorang akan Allah masukkan ke dalam jannah-Nya",
+    reference: "Membaca Alam Membaca Zaman / Hlm. 50",
+    category: "wejangan",
+    href: "",
+  },
 ];
