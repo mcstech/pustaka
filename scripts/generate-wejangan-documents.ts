@@ -85,6 +85,8 @@ function stripMarkdown(content: string): string {
   text = text.replace(/^>\s+/gm, ''); // Blockquotes
   text = text.replace(/^\s*[-*+]\s+/gm, ''); // Unordered lists
   text = text.replace(/^\s*\d+\.\s+/gm, ''); // Ordered lists
+  // Remove arabic words (if any) - optional, can be adjusted based on actual content
+  text = text.replace(/[\u0600-\u06FF]+/g, '');
   
   return text.trim();
 }
@@ -113,9 +115,12 @@ async function main() {
     const keywords = extractKeywordsFromMarkdown(content, year, filename);
     // limit body to 255 characters
     const body = stripMarkdown(content).slice(0, 255);
+
+    // remove newlines and extra spaces from body
+    const cleanedBody = body.replace(/\s+/g, ' ').trim();
     
     wejanganDocuments.push({
-      title: `${body.slice(0, 255)}`,
+      title: `${cleanedBody.slice(0, 255)}`,
       category: "wejangan",
       href: `/wejangan/${year}/${nameWithoutExt}`,
       body: `${body.slice(255)} ~ ${title} (${year})`,
