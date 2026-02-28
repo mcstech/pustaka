@@ -1,5 +1,5 @@
 import { asset } from "fresh/runtime";
-import { SearchBarModal, SearchBarTrigger } from "@/islands/search-bar.tsx";
+import { SearchBarInline } from "@/islands/search-bar-inline.tsx";
 
 export function HeroLogo() {
   return (
@@ -22,11 +22,8 @@ export function HeroLogo() {
 
 export function HeroForm() {
   return (
-    <>
-      <form class="w-full max-w-xl">
-        <SearchBarTrigger class="input-lg w-full" />
-      </form>
-      <SearchBarModal />
-    </>
+    <div class="w-full max-w-xl">
+      <SearchBarInline />
+    </div>
   );
 }
