@@ -6,10 +6,9 @@ export function HeroLogo() {
     <div class="flex flex-col items-center gap-3">
       <div class="flex items-center gap-2">
         <img
-          src={asset("/logo.svg")}
+          src={asset("/logo-2.svg")}
           alt="Pustaka"
-          width="72"
-          height="72"
+          width="100"
           class="drop-shadow-lg"
         />
         <h1 class="text-5xl font-bold tracking-tight text-base-content">
