@@ -16,7 +16,7 @@ export default define.page<typeof handler>(function Page(ctx) {
         <meta name="description" content={data.description} />
       </Head>
       <div class="mx-auto max-w-5xl px-0 py-26 lg:px-8">
-        <h1 class="text-4xl lg:text-5xl lg:leading-[1.1] text-balance font-medium mb-8">
+        <h1 class="text-4xl lg:text-5xl lg:leading-[1.1] text-pretty font-medium mb-8">
           {data.title}
         </h1>
         <Markdown source={data.content} />
