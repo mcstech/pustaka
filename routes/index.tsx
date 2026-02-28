@@ -1,5 +1,5 @@
 import { page } from "fresh";
-import { asset, Head } from "fresh/runtime";
+import { Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
 import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";
@@ -39,20 +39,7 @@ export default define.page<typeof handler>(function Home(ctx) {
         <meta name="description" content={headDescription} />
         <meta property="og:description" content={headDescription} />
         <meta property="og:image" content="/og-image.webp" />
-        <link
-          rel="preload"
-          href={asset("/fonts/quran/lpmq.woff")}
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href={asset("/fonts/quran/surah-names/v1/surah-names.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        
       </Head>
       <AtasNamaTuanSemestaAlam />
       <Hero>
