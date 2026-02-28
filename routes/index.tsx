@@ -39,7 +39,6 @@ export default define.page<typeof handler>(function Home(ctx) {
         <meta name="description" content={headDescription} />
         <meta property="og:description" content={headDescription} />
         <meta property="og:image" content="/og-image.webp" />
-        
       </Head>
       <AtasNamaTuanSemestaAlam />
       <Hero>
