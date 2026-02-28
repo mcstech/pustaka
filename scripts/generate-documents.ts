@@ -52,10 +52,10 @@ async function main() {
       // limit body to 255 characters
       const body = translationText[ayah].slice(0, 255);
       documents.push({
-        title: `${body.slice(0, 255)} - ${title} ${id}:${ayah}`,
+        title: `${body.slice(0, 255)}`,
         category: "quran",
         href: `/quran/${id}/${ayah}`,
-        body: `${body.slice(255)}`,
+        body: `${body.slice(255)} ~ ${title} ${id}:${ayah}`,
         keywords: [`${id}:${ayah}`, `${id}/${ayah}`],
       });
     }

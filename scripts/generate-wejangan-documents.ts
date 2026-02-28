@@ -81,6 +81,10 @@ function stripMarkdown(content: string): string {
   text = text.replace(/\*([^*]+)\*/g, '$1'); // Italic
   text = text.replace(/`([^`]+)`/g, '$1'); // Inline code
   text = text.replace(/^```[\s\S]*?```$/gm, ''); // Code blocks
+  // BLOCKQUOTES, LISTS, and other markdown elements can be further stripped if needed
+  text = text.replace(/^>\s+/gm, ''); // Blockquotes
+  text = text.replace(/^\s*[-*+]\s+/gm, ''); // Unordered lists
+  text = text.replace(/^\s*\d+\.\s+/gm, ''); // Ordered lists
   
   return text.trim();
 }
@@ -111,10 +115,10 @@ async function main() {
     const body = stripMarkdown(content).slice(0, 255);
     
     wejanganDocuments.push({
-      title: `${body.slice(0, 255)} - ${title}`,
+      title: `${body.slice(0, 255)}`,
       category: "wejangan",
       href: `/wejangan/${year}/${nameWithoutExt}`,
-      body: `${body.slice(255)}`,
+      body: `${body.slice(255)} ~ ${title} (${year})`,
       keywords,
     });
   }
