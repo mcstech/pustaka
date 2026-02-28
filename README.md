@@ -38,8 +38,8 @@ deno task prepare-docs
 ```
 Then run this to produce the wasm file
 
-```
-docfind "./data/documents.json" output/
+```bash
+docfind "./data/documents.json" "./static/docfind"
 ```
 
 This will:
