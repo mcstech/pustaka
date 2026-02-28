@@ -9,6 +9,7 @@ export function HeroLogo() {
           src={asset("/logo-2.svg")}
           alt="Pustaka"
           width="100"
+          height="56.25"
           class="drop-shadow-lg"
         />
         <h1 class="text-5xl font-bold tracking-tight text-base-content">
