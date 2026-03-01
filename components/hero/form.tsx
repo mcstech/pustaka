@@ -22,7 +22,7 @@ export function HeroLogo() {
 
 export function HeroForm() {
   return (
-    <div class="w-full max-w-xl">
+    <div class="size-full">
       <SearchBarInline />
     </div>
   );

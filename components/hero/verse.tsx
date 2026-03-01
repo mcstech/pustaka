@@ -1,4 +1,4 @@
-import type { RandomVerse } from "@/libs/random-verse.ts";
+import type { RandomVerse } from "@/types/index.ts";
 
 interface HeroVerseProps {
   verse: RandomVerse;
@@ -8,7 +8,7 @@ export function HeroVerse({ verse }: HeroVerseProps) {
   return (
     <a
       href={verse.href}
-      class="group max-w-xl mx-auto text-center px-4 transition-opacity hover:opacity-80"
+      class="group max-w-xl mx-auto text-center text-xs md:text-base text-pretty px-4 transition-opacity hover:opacity-80"
     >
       <blockquote class="text-base-content/70 text-sm italic leading-relaxed">
         &ldquo;{verse.text}&rdquo;

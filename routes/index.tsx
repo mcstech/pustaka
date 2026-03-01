@@ -1,9 +1,8 @@
 import { page } from "fresh";
 import { Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
-import { AtasNamaTuanSemestaAlam } from "@/components/anTSA.tsx";
 import { Hero } from "@/components/hero/index.tsx";
-import { HeroForm, HeroLogo } from "@/components/hero/form.tsx";
+import { HeroForm } from "@/components/hero/form.tsx";
 import { HeroVerse } from "@/components/hero/verse.tsx";
 import { getRandomVerse } from "@/libs/random-verse.ts";
 import { RandomVerse } from "@/types/index.ts";
@@ -40,9 +39,8 @@ export default define.page<typeof handler>(function Home(ctx) {
         <meta property="og:description" content={headDescription} />
         <meta property="og:image" content="/og-image.webp" />
       </Head>
-      <AtasNamaTuanSemestaAlam />
+      
       <Hero>
-        <HeroLogo />
         <HeroForm />
         <HeroVerse verse={verse} />
       </Hero>

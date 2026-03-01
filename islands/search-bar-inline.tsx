@@ -233,6 +233,7 @@ export function SearchBarInline({ class: className = "" }: SearchBarInlineProps)
           aria-haspopup="listbox"
         />
         <button
+          type="button"
           class="px-6 py-3 bg-base-content text-base-100 font-semibold text-sm uppercase tracking-widest hover:opacity-80 active:opacity-70 transition-opacity shrink-0"
           onClick={handleSearch}
           aria-label="Cari"
