@@ -101,7 +101,35 @@ deno task generate-quran  # Generate Quran documents
 deno task generate-bible  # Generate Bible documents
 deno task generate-wejangan  # Generate Wejangan documents
 deno task prepare-docs    # Generate all documents with summary
+deno task generate-og-quran  # Generate OG images for Quran verses
+deno task generate-og-bible  # Generate OG images for Bible verses
+deno task generate-og-all    # Generate all OG images
 ```
+
+## Social Media Sharing (OG Images)
+
+Pustaka automatically generates premium Open Graph images for every verse to create a breathtaking sharing experience on WhatsApp, Instagram, and other social platforms.
+
+### Features
+- 📱 **Portrait Ratio**: 1080x1920 optimized for mobile sharing
+- 🎨 **Premium Design**: Elegant gradients and typography
+- 🌐 **Multi-language**: Arabic + Indonesian for Quran, Indonesian for Bible
+- ⚡ **Lightweight**: SVG format for fast loading
+
+### Generate OG Images
+
+```bash
+# Generate all OG images (recommended before deployment)
+deno task generate-og-all
+
+# Or generate individually
+deno task generate-og-quran   # Generate for all Quran verses
+deno task generate-og-bible   # Generate for all Bible verses
+```
+
+Images are generated in `static/og/` and automatically served when verses are shared on social media.
+
+For more details, see [OG Images Documentation](docs/OG_IMAGES.md).
 
 ## Project Structure
 
