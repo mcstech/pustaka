@@ -9,7 +9,10 @@
     "generate-quran": "deno run --allow-read --allow-write scripts/generate-documents.ts",
     "generate-bible": "deno run --allow-net --allow-read --allow-write scripts/generate-bible-documents.ts",
     "generate-wejangan": "deno run --allow-read --allow-write scripts/generate-wejangan-documents.ts",
-    "prepare-docs": "deno run --allow-read --allow-write --allow-run scripts/prepare-docs.ts"
+    "prepare-docs": "deno run --allow-read --allow-write --allow-run scripts/prepare-docs.ts",
+    "generate-og-quran": "deno run --allow-read --allow-write scripts/generate-quran-og-images.ts",
+    "generate-og-bible": "deno run --allow-read --allow-write scripts/generate-bible-og-images.ts",
+    "generate-og-all": "deno run --allow-read --allow-write scripts/generate-quran-og-images.ts && deno run --allow-read --allow-write scripts/generate-bible-og-images.ts"
   },
   "lint": {
     "rules": {

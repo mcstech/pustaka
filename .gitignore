@@ -13,3 +13,5 @@ _fresh/
 node_modules/
 vendor/
 
+# Generated OG images (can be regenerated using scripts)
+static/og/

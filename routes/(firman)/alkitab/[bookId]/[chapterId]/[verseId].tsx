@@ -1,4 +1,5 @@
 import { Partial } from "fresh/runtime";
+import { Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
 
 export default define.page(function AlkitabVersePage(ctx) {
@@ -33,7 +34,27 @@ export default define.page(function AlkitabVersePage(ctx) {
   const hasPrev = verseNum > 1;
   const hasNext = verseNum < totalVerses;
 
+  // OG metadata
+  const pageTitle = `${book.commonName} ${chapterId}:${verseId}`;
+  const pageDescription = verseText;
+  const ogImageUrl = `/og/alkitab/${book.id}/${chapterId}/${verseId}.svg`;
+  const pageUrl = ctx.url.href;
+
   return (
+    <>
+      <Head>
+        <title>{pageTitle} - {alkitab.translation.shortName} | Pustaka</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImageUrl} />
+      </Head>
     <div class="max-w-5xl mx-auto px-4 py-8" f-client-nav>
       {/* Breadcrumb — static, outside the partial */}
       <div class="text-sm breadcrumbs mb-6">
@@ -133,5 +154,6 @@ export default define.page(function AlkitabVersePage(ctx) {
         </div>
       </Partial>
     </div>
+    </>
   );
 });
