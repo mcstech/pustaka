@@ -1,4 +1,5 @@
 import { define } from "@/utils.ts";
+import { Head } from "fresh/runtime";
 
 export default define.page(function QuranAyah(ctx) {
   const { chapterId, ayahId } = ctx.params;
@@ -23,7 +24,27 @@ export default define.page(function QuranAyah(ctx) {
   const hasPrev = ayahNum > 1;
   const hasNext = ayahNum < totalAyah;
 
+  // OG metadata
+  const pageTitle = `${surah.name_latin} (${surah.name}) - Ayat ${ayahId}`;
+  const pageDescription = translation || arabic;
+  const ogImageUrl = `/og/quran/${id}/${ayahId}.svg`;
+  const pageUrl = ctx.url.href;
+
   return (
+    <>
+      <Head>
+        <title>{pageTitle} | Pustaka</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImageUrl} />
+      </Head>
     <div class="max-w-5xl mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <div class="text-sm breadcrumbs mb-6">
@@ -129,5 +150,6 @@ export default define.page(function QuranAyah(ctx) {
         </div>
       </div>
     </div>
+    </>
   );
 });
