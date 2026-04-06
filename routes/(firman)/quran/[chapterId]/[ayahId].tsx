@@ -27,8 +27,8 @@ export default define.page(function QuranAyah(ctx) {
   // OG metadata
   const pageTitle = `${surah.name_latin} (${surah.name}) - Ayat ${ayahId}`;
   const pageDescription = translation || arabic;
-  const ogImageUrl = `/og/quran/${id}/${ayahId}.svg`;
   const pageUrl = ctx.url.href;
+  const ogImageUrl = new URL(`/og/quran/${id}/${ayahId}.svg`, ctx.url).href;
 
   return (
     <>
