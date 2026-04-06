@@ -137,7 +137,7 @@ To regenerate all images (e.g., after design updates):
 
 ## Technical Notes
 
-- SVG images use embedded fonts for consistent rendering
+- SVG images specify `font-family` names; final rendering depends on fonts available in the viewing/rendering environment
 - Text wrapping algorithm prevents overflow
 - Long verses are truncated with ellipsis
 - Special XML characters are properly escaped
