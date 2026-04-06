@@ -1,4 +1,4 @@
-import { Partial } from "fresh/runtime";
+import { Head, Partial } from "fresh/runtime";
 import { define } from "@/utils.ts";
 
 export default define.page(function AlkitabVersePage(ctx) {
@@ -33,7 +33,23 @@ export default define.page(function AlkitabVersePage(ctx) {
   const hasPrev = verseNum > 1;
   const hasNext = verseNum < totalVerses;
 
+  const pageTitle = `${book.commonName} ${chapterId}:${verseId} | Pustaka`;
+  const pageDescription = verseText.length > 200
+    ? verseText.slice(0, 197) + "..."
+    : verseText;
+
   return (
+    <>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta property="og:title" content={pageTitle} />
+        <meta name="description" content={pageDescription} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={`${ctx.url.origin}/og-alkitab.png`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={`${ctx.url.origin}/og-alkitab.png`} />
+      </Head>
     <div class="max-w-5xl mx-auto px-4 py-8" f-client-nav>
       {/* Breadcrumb — static, outside the partial */}
       <div class="text-sm breadcrumbs mb-6">
@@ -133,5 +149,6 @@ export default define.page(function AlkitabVersePage(ctx) {
         </div>
       </Partial>
     </div>
+    </>
   );
 });

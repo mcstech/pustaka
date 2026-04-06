@@ -1,3 +1,4 @@
+import { Head } from "fresh/runtime";
 import { define } from "@/utils.ts";
 
 export default define.page(function QuranAyah(ctx) {
@@ -23,7 +24,25 @@ export default define.page(function QuranAyah(ctx) {
   const hasPrev = ayahNum > 1;
   const hasNext = ayahNum < totalAyah;
 
+  const pageTitle = `${surah.name_latin} Ayat ${ayahId} | Pustaka`;
+  const pageDescription = translation
+    ? translation.length > 200
+      ? translation.slice(0, 197) + "..."
+      : translation
+    : `${surah.name_latin} (${surah.name}) — Ayat ${ayahId} dari ${totalAyah}`;
+
   return (
+    <>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta property="og:title" content={pageTitle} />
+        <meta name="description" content={pageDescription} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={`${ctx.url.origin}/og-quran.png`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={`${ctx.url.origin}/og-quran.png`} />
+      </Head>
     <div class="max-w-5xl mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <div class="text-sm breadcrumbs mb-6">
@@ -129,5 +148,6 @@ export default define.page(function QuranAyah(ctx) {
         </div>
       </div>
     </div>
+    </>
   );
 });
