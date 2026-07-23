@@ -19,4 +19,16 @@ export const randomQuotes: RandomVerse[] = [
     category: "wejangan",
     href: "",
   },
+  {
+    text: "Kitab Al-Quran ini hanyalah tulisan di atas kertas, tetapi ilmu (wahyu) yang sesungguhnya ada pada alam dan sejarah ummat manusia.",
+    reference: "Membaca Alam Membaca Zaman / Surat Al-Qamar, Hlm. 139",
+    category: "wejangan",
+    href: "",
+  },
+  {
+    text: "Al-Quran sebagai bulan memiliki manzilah dan kadar pancaran sinar yang bertahap, dari tak tampak, sedikit terang (sabit), sangat terang (purnama) hingga sinarnya kembali sedikit terang dan tak tampak lagi. Artinya, dari kondisi tidak memahami wahyu Al-Quran menjadi sedikit paham, lalu benar-benar paham, hingga cahaya (petunjuk) itu tak tampak lagi karena ayat-ayat-Nya sudah mansukh.",
+    reference: "Membaca Alam Membaca Zaman / Surat Al-Qamar, Hlm. 139",
+    category: "wejangan",
+    href: "",
+  },
 ];
