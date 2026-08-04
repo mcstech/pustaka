@@ -43,4 +43,10 @@ export const randomQuotes: RandomVerse[] = [
     category: "wejangan",
     href: "",
   },
+  {
+    text: "Hanya ada satu jalan menuju ridho Allah yaitu shirotol mustaqim, jalannya orang-orang yang telah Allah berikan ni'mat atas mereka, jalannya para nabi dan rosul Allah.",
+    reference: "Sunnatulloh Kehidupan; Hlm. 17",
+    category: "wejangan",
+    href: "",
+  },
 ];
