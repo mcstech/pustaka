@@ -31,4 +31,16 @@ export const randomQuotes: RandomVerse[] = [
     category: "wejangan",
     href: "",
   },
+  {
+    text: "Ingat penjelasan para nabi, bahwa mengenal Alloh adalah jalan yang paling utama bagi orang-orang yang mau beriman.",
+    reference: "Sunnatulloh Kehidupan; Hlm. 9",
+    category: "wejangan",
+    href: "",
+  },
+  {
+    text: "Mengenal Alloh adalah masalah yang utama sebelum mempelajari yang lain.",
+    reference: "Sunnatulloh Kehidupan; Hlm. 9",
+    category: "wejangan",
+    href: "",
+  },
 ];
